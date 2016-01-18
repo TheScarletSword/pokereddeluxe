@@ -59,6 +59,6 @@ In the **Cygwin terminal**:
 
 	make
 
-# For further inquires
+# For further inquiries
 
 See https://www.youtube.com/watch?v=fYytG7IUUWg
