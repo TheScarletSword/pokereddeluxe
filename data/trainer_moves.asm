@@ -1,0 +1,4143 @@
+; yellow format is now used by default
+TeamMoves:
+IF CHALLENGE_MODE
+; uses these movesets if CHALLENGE_MODE in constants.asm is set to 1; otherwise uses default movesets
+	db SUPER_NERD,$9 ; Cinnabar Gym
+IF DEF(_RED)
+; Arcanine
+	db 2,1,TAKE_DOWN
+	db 2,2,DIG
+	db 2,3,CRUNCH
+	db 2,4,FLAMETHROWER
+; Arcanine
+	db 3,1,TAKE_DOWN
+	db 3,2,DIG
+	db 3,3,CRUNCH
+	db 3,4,FLAMETHROWER
+ENDC
+IF DEF(_BLUE)
+; Ninetales
+	db 2,1,DARK_PULSE
+	db 2,2,CONFUSE_RAY
+	db 2,3,FLAMETHROWER
+	db 2,4,FIRE_SPIN
+; Ninetales
+	db 3,1,DARK_PULSE
+	db 3,2,CONFUSE_RAY
+	db 3,3,FLAMETHROWER
+	db 3,4,FIRE_SPIN
+ENDC
+	db 0
+
+	db SUPER_NERD,$C ; Cinnabar Gym
+; Arcanine
+	db 1,1,TAKE_DOWN
+	db 1,2,EXTREMESPEED
+	db 1,3,CRUNCH
+	db 1,4,FLAMETHROWER
+; Ninetales
+	db 2,1,DARK_PULSE
+	db 2,2,CONFUSE_RAY
+	db 2,3,FLAMETHROWER
+	db 2,4,FIRE_SPIN
+	db 0
+
+	db BURGLAR,$4 ; Cinnabar Gym
+IF DEF(_RED)
+; Ninetales
+	db 1,1,DARK_PULSE
+	db 1,2,CONFUSE_RAY
+	db 1,3,FLAMETHROWER
+	db 1,4,FIRE_SPIN
+; Ninetales
+	db 3,1,DARK_PULSE
+	db 3,2,CONFUSE_RAY
+	db 3,3,FLAMETHROWER
+	db 3,4,FIRE_SPIN
+ENDC
+IF DEF(_BLUE)
+; Arcanine
+	db 1,1,TAKE_DOWN
+	db 1,2,EXTREMESPEED
+	db 1,3,CRUNCH
+	db 1,4,FLAMETHROWER
+; Arcanine
+	db 3,1,TAKE_DOWN
+	db 3,2,EXTREMESPEED
+	db 3,3,CRUNCH
+	db 3,4,FLAMETHROWER
+ENDC
+	db 0
+
+	db BURGLAR,$6 ; Cinnabar Gym
+; Ninetales
+	db 1,1,TOXIC
+	db 1,2,CONFUSE_RAY
+	db 1,3,FLAMETHROWER
+	db 1,4,FIRE_SPIN
+; Arcanine
+	db 2,1,TAKE_DOWN
+	db 2,2,DIG
+	db 2,3,CRUNCH
+	db 2,4,FLAMETHROWER
+	db 0
+
+	db BURGLAR,$8 ; Cinnabar Mansion
+IF DEF(_RED)
+; Ninetales
+	db 1,1,AMNESIA
+	db 1,2,CONFUSE_RAY
+	db 1,3,FLAMETHROWER
+	db 1,4,FIRE_SPIN
+ENDC
+IF DEF(_BLUE)
+; Arcanine
+	db 1,1,TAKE_DOWN
+	db 1,2,DIG
+	db 1,3,CRUNCH
+	db 1,4,FLAMETHROWER
+ENDC
+	db 0
+
+	db BURGLAR,$9 ; Pokemon Mansion
+IF DEF(_RED)
+; Arcanine
+	db 1,1,TAKE_DOWN
+	db 1,2,BODY_SLAM
+	db 1,3,CRUNCH
+	db 1,4,FLAMETHROWER
+ENDC
+IF DEF(_BLUE)
+; Ninetales
+	db 1,1,DARK_PULSE
+	db 1,2,CONFUSE_RAY
+	db 1,3,FLAMETHROWER
+	db 1,4,FIRE_SPIN
+ENDC
+	db 0
+
+	db BEAUTY,$4 ; Route 13
+; Ninetales
+	db 2,1,FLAMETHROWER
+	db 2,2,DARK_PULSE
+	db 2,3,TAKE_DOWN	
+	db 2,4,CONFUSE_RAY
+	db 0
+
+	db JR__TRAINER_F,$16 ; Route 15
+IF DEF(_RED)
+; Clefable
+	db 1,1,ICE_BEAM
+	db 1,2,MINIMIZE
+	db 1,3,METRONOME
+	db 1,4,MOONBLAST
+ENDC
+IF DEF(_BLUE)
+; Wigglytuff
+	db 1,1,SING
+	db 1,2,THUNDERBOLT
+	db 1,3,DOUBLE_EDGE
+	db 1,4,PLAY_ROUGH
+ENDC
+	db 0
+
+	db BEAUTY,$5 ; Route 13
+IF DEF(_RED)
+; Wigglytuff
+	db 1,1,THUNDER
+	db 1,2,SING
+	db 1,3,BODY_SLAM
+	db 1,4,PLAY_ROUGH
+ENDC
+IF DEF(_BLUE)
+; Clefable
+	db 1,1,SING
+	db 1,2,BLIZZARD
+	db 1,3,MINIMIZE
+	db 1,4,METRONOME
+ENDC
+	db 0
+
+	db BEAUTY,$9 ; Route 15
+IF DEF(_RED)
+; Clefable
+	db 2,1,SING
+	db 2,2,MOONBLAST
+	db 2,3,MINIMIZE
+	db 2,4,THUNDERBOLT
+ENDC
+IF DEF(_BLUE)
+; Wigglytuff
+	db 2,1,BODY_SLAM
+	db 2,2,REST
+	db 2,3,ICE_BEAM
+	db 2,4,DOUBLE_EDGE
+ENDC
+	db 0
+
+	db LASS,$10 ; Route 8
+; Clefable
+	db 2,1,PSYCHIC_M
+	db 2,2,SING
+	db 2,3,DOUBLESLAP
+	db 2,4,MINIMIZE
+	db 0
+
+	db JR__TRAINER_F,$7 ; Route 10
+; Clefable
+	db 2,1,DAZZLINGLEAM
+	db 2,2,SING
+	db 2,3,DOUBLESLAP
+	db 2,4,MINIMIZE
+	db 0
+
+	db SWIMMER,$2 ; Route 19
+IF DEF(_RED)
+; Cloyster
+	db 2,1,SUPERSONIC
+	db 2,2,CLAMP
+	db 2,3,ICE_BEAM
+	db 2,4,SPIKE_CANNON
+ENDC
+IF DEF(_BLUE)
+; Starmie
+	db 2,1,SURF
+	db 2,2,RECOVER
+	db 2,3,THUNDERBOLT
+	db 2,4,MINIMIZE
+ENDC
+	db 0
+
+	db SWIMMER,$8 ; Route 19
+IF DEF(_RED)
+; Starmie
+	db 3,1,ICE_BEAM
+	db 3,2,SURF
+	db 3,3,RECOVER
+	db 3,4,SWIFT
+ENDC
+IF DEF(_BLUE)
+; Cloyster
+	db 3,1,BLIZZARD
+	db 3,2,SUPERSONIC
+	db 3,3,CLAMP
+	db 3,4,AURORA_BEAM
+ENDC
+	db 0
+
+	db SWIMMER,$9 ; Route 20
+IF DEF(_RED)
+; Cloyster
+	db 2,1,SUPERSONIC
+	db 2,2,CLAMP
+	db 2,3,AURORA_BEAM
+	db 2,4,LEER
+ENDC
+IF DEF(_BLUE)
+; Starmie
+	db 2,1,SWIFT
+	db 2,2,RECOVER
+	db 2,3,HYDRO_PUMP
+	db 2,4,MINIMIZE
+ENDC
+	db 0
+
+	db FISHER,$8 ; Route 21
+; Cloyster
+	db 2,1,SUPERSONIC
+	db 2,2,CLAMP
+	db 2,3,AURORA_BEAM
+	db 2,4,POISON_JAB
+	db 0
+
+	db JR__TRAINER_F,$14 ; Route 15
+IF DEF(_RED)
+; Vileplume
+	db 3,1,ACID
+	db 3,2,STUN_SPORE
+	db 3,3,SLEEP_POWDER
+	db 3,4,GIGA_DRAIN
+ENDC
+IF DEF(_BLUE)
+; Victreebel
+	db 3,1,ACID
+	db 3,2,STUN_SPORE
+	db 3,3,SLEEP_POWDER
+	db 3,4,LEAF_BLADE
+ENDC
+	db 0
+
+	db BEAUTY,$3 ; Celadon Gym
+; Exeggutor
+	db 1,1,HYPNOSIS
+	db 1,2,REFLECT
+	db 1,3,LEECH_SEED
+	db 1,4,PSYCHIC_M
+	db 0
+
+	db PSYCHIC,$1 ; Saffron Gym
+; Exeggutor
+	db 4,1,REFLECT
+	db 4,2,LEECH_SEED
+	db 4,3,STUN_SPORE
+	db 4,4,GIGA_DRAIN
+	db 0
+
+	db POKEMANIAC,$3 ; Rock Tunnel
+IF DEF(_RED)
+; Nidoking
+	db 2,1,HORN_ATTACK
+	db 2,2,POISON_JAB
+	db 2,3,FURY_ATTACK
+	db 2,4,ROCK_SLIDE
+ENDC
+IF DEF(_BLUE)
+; Nidoqueen
+	db 2,1,SCRATCH
+	db 2,2,POISON_JAB
+	db 2,3,TAIL_WHIP
+	db 2,4,ROCK_SLIDE
+ENDC
+	db 0
+
+	db JR__TRAINER_F,$15 ; Route 15
+; Raichu
+	db 3,1,DOUBLE_TEAM
+	db 3,2,FLY
+	db 3,3,THUNDERBOLT
+	db 3,4,AGILITY
+	db 0
+
+	db SCIENTIST,$B ; Silph Co. 10F
+; Raichu
+	db 3,1,DOUBLE_TEAM
+	db 3,2,SUBMISSION
+	db 3,3,THUNDERBOLT
+	db 3,4,AGILITY
+	db 0
+
+	db SWIMMER,$4 ; Route 19
+; POLIWRATH
+	db 2,1,HYPNOSIS
+	db 2,2,PSYCHIC_M
+	db 2,3,SUBMISSION
+	db 2,4,BODY_SLAM
+	db 0
+
+	db SWIMMER,$F ; Route 21
+; Poliwrath
+	db 1,1,SURF
+	db 1,2,ICE_BEAM
+	db 1,3,BODY_SLAM
+	db 1,4,AMNESIA
+; Politoed
+	db 3,1,SURF
+	db 3,2,PSYCHIC
+	db 3,3,BODY_SLAM
+	db 3,4,AMNESIA
+	db 0
+
+	db GAMBLER,$5 ; Route 8
+; Poliwrath
+	db 3,1,SUBMISSION
+	db 3,2,HYPNOSIS
+	db 3,3,WATER_GUN
+	db 3,4,DOUBLESLAP
+	db 0
+
+	db BLACKBELT,$8 ; Viridian Gym
+; Poliwrath
+	db 3,1,PSYCHIC
+	db 3,2,POISON_JAB
+	db 3,3,AMNESIA
+	db 3,4,SURF
+	db 0
+
+	db BEAUTY,$6 ; Route 20
+; Politoed
+	db 1,1,ICE_BEAM
+	db 1,2,PSYCHIC
+	db 1,3,BODY_SLAM
+	db 1,4,AMNESIA
+	db 0
+
+	db CHANNELER,$17 ; Saffron Gym
+IF DEF(_BLUE)
+; Chandelure
+	db 2,1,PSYCHIC_M
+	db 2,2,FIRE_SPIN
+	db 2,3,CONFUSE_RAY
+	db 2,4,NIGHT_SHADE
+ENDC
+	db 0
+
+	db BLACKBELT,$1 ; Dojo Master
+; Tyrogue
+	db 1,1,SUBMISSION
+	db 1,2,MEGA_PUNCH
+	db 1,3,MEGA_KICK
+	db 1,4,SUBSTITUTE
+; Hitmonlee
+	db 2,1,HI_JUMP_KICK
+	db 2,2,MEGA_KICK
+	db 2,3,POISON_JAB
+	db 2,4,BODY_SLAM
+; Hitmonchan
+	db 3,1,BULLET_PUNCH
+	db 3,2,MEGA_PUNCH
+	db 3,3,VACUUM_WAVE
+	db 3,4,SUBMISSION
+; Hitmontop
+	db 4,1,SUBSTITUTE
+	db 4,2,SUBMISSION
+	db 4,3,MEGA_KICK
+	db 4,4,DIG
+	db 0
+
+	db COOLTRAINER_M,$1 ; Viridian Gym
+IF DEF(_RED)
+; Nidoking
+	db 1,1,EARTHQUAKE
+	db 1,2,POISON_JAB
+	db 1,3,ROCK_SLIDE
+	db 1,4,MEGAHORN
+ENDC
+IF DEF(_BLUE)
+; Nidoqueen
+	db 1,1,EARTHQUAKE
+	db 1,2,POISON_JAB
+	db 1,3,ROCK_SLIDE
+	db 1,4,SUPERPOWER
+ENDC
+; Skarmory
+	db 2,1,STEEL_WING
+	db 2,2,SWORDS_DANCE
+	db 2,3,SLASH
+	db 2,4,OMINOUS_WIND
+	db 0
+
+	db COOLTRAINER_M,$2 ; Victory Road
+; Exeggutor
+	db 1,1,PSYCHIC_M
+	db 1,2,LEECH_SEED
+	db 1,3,SLEEP_POWDER
+	db 1,4,GIGA_DRAIN
+IF DEF(_RED)
+; Cloyster
+	db 2,1,ICE_SHARD
+	db 2,2,HYDRO_PUMP
+	db 2,3,ICE_BEAM
+	db 2,4,DOUBLE_EDGE
+; Arcanine
+	db 3,1,FIRE_BLAST
+	db 3,2,EXTREMESPEED
+	db 3,3,CRUNCH
+	db 3,4,BODY_SLAM
+ENDC
+IF DEF(_BLUE)
+; Starmie
+	db 2,1,RECOVER
+	db 2,2,HYDRO_PUMP
+	db 2,3,PSYCHIC_M
+	db 2,4,THUNDER
+; Ninetales
+	db 3,1,AMNESIA
+	db 3,2,FIRE_BLAST
+	db 3,3,DARK_PULSE
+	db 3,4,WILL_O_WISP
+ENDC
+; Snorlax
+	db 4,1,HYPER_BEAM
+	db 4,2,BODY_SLAM
+	db 4,3,SCREECH
+	db 4,4,EARTHQUAKE
+	db 0
+
+	db COOLTRAINER_M,$3 ; Victory Road
+; Kingler
+	db 1,1,MUD_SHOT
+	db 1,2,SWORDS_DANCE
+	db 1,3,CRABHAMMER
+	db 1,4,X_SCISSOR
+; Mienshao
+	db 2,1,DRAIN_PUNCH
+	db 2,2,ROCK_SLIDE
+	db 2,3,HI_JUMP_KICK
+	db 2,4,POISON_JAB
+; Scizor
+	db 3,1,SWORDS_DANCE
+	db 3,2,BULLET_PUNCH
+	db 3,3,X_SCISSOR
+	db 3,4,OMINOUS_WIND
+IF DEF(_RED)
+; Starmie
+	db 4,1,RECOVER
+	db 4,2,HYDRO_PUMP
+	db 4,3,PSYCHIC_M
+	db 4,4,THUNDER
+ENDC
+IF DEF(_BLUE)
+; Cloyster
+	db 4,1,ICE_SHARD
+	db 4,2,HYDRO_PUMP
+	db 4,3,ICE_BEAM
+	db 4,4,DOUBLE_EDGE
+ENDC
+; Nidoking
+	db 5,1,MEGAHORN
+	db 5,2,THUNDER
+	db 5,3,EARTHQUAKE
+	db 5,4,BLIZZARD
+	db 0
+
+	db COOLTRAINER_M,$5 ; Victory Road
+; Venusaur
+	db 1,1,LEECH_SEED
+	db 1,2,TOXIC
+	db 1,3,RAZOR_LEAF
+	db 1,4,DOUBLE_TEAM
+; Blastoise
+	db 2,1,HYDRO_PUMP
+	db 2,2,BITE
+	db 2,3,EARTHQUAKE
+	db 2,4,BODY_SLAM
+; Charizard
+	db 3,1,FIRE_BLAST
+	db 3,2,OMINOUS_WIND
+	db 3,3,SWORDS_DANCE
+	db 3,4,WING_ATTACK
+; Raichu
+	db 4,1,VOLT_TACKLE
+	db 4,2,SUBMISSION
+	db 4,3,AMNESIA
+	db 4,4,SURF
+	db 0
+
+	db COOLTRAINER_M,$9 ; Viridian Gym
+IF DEF(_RED)
+; Camerupt
+	db 1,1,AMNESIA
+	db 1,2,FLAMETHROWER
+	db 1,3,ROCK_SLIDE
+	db 1,4,EARTHQUAKE
+; Dugtrio
+	db 2,1,NIGHT_SLASH
+	db 2,2,SAND_TOMB
+	db 2,3,SLASH
+	db 2,4,TRI_ATTACK
+ENDC
+IF DEF(_BLUE)
+; Sandslash
+	db 1,1,SWORDS_DANCE
+	db 1,2,EARTHQUAKE
+	db 1,3,SLASH
+	db 1,4,X_SCISSOR
+; Excadrill
+	db 2,1,ROCK_SLIDE
+	db 2,2,DIG
+	db 2,3,POISON_JAB
+	db 2,4,SUBMISSION
+ENDC
+	db 0
+
+	db COOLTRAINER_M,$A ; Viridian Gym
+; Flygon
+	db 1,1,EARTHQUAKE
+	db 1,2,CRUNCH
+	db 1,3,HEAT_WAVE
+	db 1,4,STEEL_WING
+	db 0
+
+	db COOLTRAINER_F,$1 ; Celadon Gym
+IF DEF(_RED)
+; Weepinbell
+	db 1,1,ACID
+	db 1,2,SWORDS_DANCE
+	db 1,3,VINE_WHIP
+	db 1,4,SLEEP_POWDER
+; Breloom
+	db 2,1,VACUUM_WAVE
+	db 2,2,MEGA_PUNCH
+	db 2,3,STUN_SPORE
+	db 2,4,LEECH_SEED
+; Leafeon
+	db 3,1,RAZOR_LEAF
+	db 3,2,STRENGTH
+	db 3,3,BITE
+	db 3,4,QUICK_ATTACK
+ENDC
+IF DEF(_BLUE)
+; Gloom
+	db 1,1,DRAIN_PUNCH
+	db 1,2,ACID
+	db 1,3,POISONPOWDER
+	db 1,4,ABSORB
+; Parasect
+	db 2,1,X_SCISSOR
+	db 2,2,SPORE
+	db 2,3,STUN_SPORE
+	db 2,4,DIG
+; Leafeon
+	db 3,1,RAZOR_LEAF
+	db 3,2,STRENGTH
+	db 3,3,BITE
+	db 3,4,QUICK_ATTACK
+ENDC
+	db 0
+
+	db COOLTRAINER_F,$2 ; Victory Road
+IF DEF(_RED)
+; Slowking
+	db 1,1,AMNESIA
+	db 1,2,PSYCHIC_M
+	db 1,3,SURF
+	db 1,4,THUNDER_WAVE
+; Kangaskhan
+	db 2,1,DOUBLE_EDGE
+	db 2,2,SUBMISSION
+	db 2,3,ROCK_SLIDE
+	db 2,4,DRAIN_PUNCH
+; Tangrowth
+	db 3,1,ANCIENTPOWER
+	db 3,2,EARTHQUAKE
+	db 3,3,GIGA_DRAIN
+	db 3,4,POISON_JAB
+; Galvantula
+	db 4,1,THUNDER_WAVE
+	db 4,2,BUG_BUZZ
+	db 4,3,GIGA_DRAIN
+	db 4,4,THUNDERBOLT
+ENDC
+IF DEF(_BLUE)
+; Kingdra
+	db 1,1,DRAGON_PULSE
+	db 1,2,SURF
+	db 1,3,AGILITY
+	db 1,4,ICE_BEAM
+; Kangaskhan
+	db 2,1,DOUBLE_EDGE
+	db 2,2,SUBMISSION
+	db 2,3,ROCK_SLIDE
+	db 2,4,DRAIN_PUNCH
+; Bellossom
+	db 3,1,SLEEP_POWDER
+	db 3,2,GIGA_DRAIN
+	db 3,3,DRAIN_PUNCH
+	db 3,4,MOONBLAST
+; Galvantula
+	db 4,1,THUNDER_WAVE
+	db 4,2,BUG_BUZZ
+	db 4,3,GIGA_DRAIN
+	db 4,4,THUNDERBOLT
+ENDC
+	db 0
+
+	db COOLTRAINER_F,$3 ; Victory Road
+; Florges
+	db 1,1,PSYCHIC_M
+	db 1,2,GIGA_DRAIN
+	db 1,3,MOONBLAST
+	db 1,4,REFLECT
+; Dewgong
+	db 2,1,SURF
+	db 2,2,BODY_SLAM
+	db 2,3,ICE_SHARD
+	db 2,4,ICE_BEAM
+; Blissey
+	db 3,1,SOFTBOILED
+	db 3,2,PSYCHIC_M
+	db 3,3,REFLECT
+	db 3,4,FIRE_BLAST
+; Nidoqueen
+	db 4,1,EARTHQUAKE
+	db 4,2,BLIZZARD
+	db 4,3,THUNDER
+	db 4,4,POISON_JAB
+; Ampharos
+	db 5,1,THUNDERBOLT
+	db 5,2,SEISMIC_TOSS
+	db 5,3,FIRE_PUNCH
+	db 5,4,CONFUSE_RAY
+	db 0
+
+	db COOLTRAINER_F,$5 ; Victory Road
+IF DEF(_RED)
+; Persian
+	db 1,1,SLASH
+	db 1,2,BUBBLEBEAM
+	db 1,3,NIGHT_SLASH
+	db 1,4,DOUBLE_EDGE
+; Ninetales
+	db 2,1,FLAMETHROWER
+	db 2,2,AMNESIA
+	db 2,3,WILL_O_WISP
+	db 2,4,DARK_PULSE
+; Magnezone
+	db 3,1,FLASH_CANNON
+	db 3,2,THUNDERBOLT
+	db 3,3,BARRIER
+	db 3,4,METAL_SOUND
+; Butterfree
+	db 4,1,SLEEP_POWDER
+	db 4,2,BUG_BUZZ
+	db 4,3,PSYCHIC_M
+	db 4,4,GIGA_DRAIN
+ENDC
+IF DEF(_BLUE)
+; Liepard
+	db 1,1,SUCKER_PUNCH
+	db 1,2,THUNDER_WAVE
+	db 1,3,AMNESIA
+	db 1,4,PLAY_ROUGH
+; Arcanine
+	db 2,1,FIRE_BLAST
+	db 2,2,EXTREMESPEED
+	db 2,3,CRUNCH
+	db 2,4,DOUBLE_EDGE
+; Magnezone
+	db 3,1,FLASH_CANNON
+	db 3,2,THUNDERBOLT
+	db 3,3,BARRIER
+	db 3,4,METAL_SOUND
+; Beedrill
+	db 4,1,X_SCISSOR
+	db 4,2,SWORDS_DANCE
+	db 4,3,POISON_JAB
+	db 4,4,OMINOUS_WIND
+ENDC
+	db 0
+
+	db ROCKET,$1E ; Silph Co. 6F Brother
+; Parasect
+	db 1,1,GIGA_DRAIN
+	db 1,2,X_SCISSOR
+	db 1,3,SWORDS_DANCE
+	db 1,4,SPORE
+; Vileplume
+	db 2,1,STUN_SPORE
+	db 2,2,DAZZLINGLEAM
+	db 2,3,GIGA_DRAIN
+	db 2,4,MOONLIGHT
+; Victreebel
+	db 3,1,LEAF_BLADE
+	db 3,2,TOXIC
+	db 3,3,WRAP
+	db 3,4,ACID
+; Tangrowth
+	db 4,1,POISON_JAB
+	db 4,2,BODY_SLAM
+	db 4,3,SWORDS_DANCE
+	db 4,4,POWER_WHIP
+	db 0
+
+	db ROCKET,$21 ; Silph Co. 7F Brother
+IF DEF(_RED)
+; Camerupt
+	db 1,1,EARTHQUAKE
+	db 1,2,ROCK_SLIDE
+	db 1,3,AMNESIA
+	db 1,4,FLAMETHROWER
+; Marowak
+	db 2,1,BONEMERANG
+	db 2,2,BODY_SLAM
+	db 2,3,BLIZZARD
+	db 2,4,SWORDS_DANCE
+; Rhydon
+	db 3,1,EARTHQUAKE
+	db 3,2,POISON_JAB
+	db 3,3,DOUBLE_EDGE
+	db 3,4,ROCK_SLIDE
+; Sandslash
+	db 4,1,X_SCISSOR
+	db 4,2,EARTHQUAKE
+	db 4,3,SLASH
+	db 4,4,SAND_ATTACK
+ENDC
+IF DEF(_BLUE)
+; Gastrodon
+	db 1,1,SURF
+	db 1,2,BODY_SLAM
+	db 1,3,EARTHQUAKE
+	db 1,4,RECOVER
+; Donphan
+	db 2,1,EARTHQUAKE
+	db 2,2,DOUBLE_EDGE
+	db 2,3,SLAM
+	db 2,4,POISON_JAB
+; Rhydon
+	db 3,1,EARTHQUAKE
+	db 3,2,POISON_JAB
+	db 3,3,DOUBLE_EDGE
+	db 3,4,ROCK_SLIDE
+; Marowak
+	db 4,1,BONEMERANG
+	db 4,2,BODY_SLAM
+	db 4,3,BLIZZARD
+	db 4,4,SWORDS_DANCE
+ENDC
+	db 0
+
+	db ROCKET,$24 ; Silph Co. 8F Brother
+; Fearow
+	db 1,1,DRILL_PECK
+	db 1,2,HEAT_WAVE
+	db 1,3,MIRROR_MOVE
+	db 1,4,DOUBLE_EDGE
+; Skarmory
+	db 2,1,STEEL_WING
+	db 2,2,DOUBLE_TEAM
+	db 2,3,SAND_ATTACK
+	db 2,4,SWORDS_DANCE
+; Gyarados
+	db 3,1,HYPER_BEAM
+	db 3,2,BODY_SLAM
+	db 3,3,HYDRO_PUMP
+	db 3,4,CRUNCH
+; Crobat
+	db 4,1,X_SCISSOR
+	db 4,2,AIR_SLASH
+	db 4,3,CONFUSE_RAY
+	db 4,4,SCREECH
+	db 0
+
+	db ROCKET,$26 ; Silph Co. 9F Brother
+; Rhydon
+	db 1,1,EARTHQUAKE
+	db 1,2,SWORDS_DANCE
+	db 1,3,POISON_JAB
+	db 1,4,ROCK_SLIDE
+; Gigalith
+	db 2,1,STONE_EDGE
+	db 2,2,BODY_SLAM
+	db 2,3,SAND_ATTACK
+	db 2,4,EARTHQUAKE
+; Onix
+	db 3,1,EARTHQUAKE
+	db 3,2,SCREECH
+	db 3,3,BIND
+	db 3,4,ROCK_SLIDE
+; Golem
+	db 4,1,EARTHQUAKE
+	db 4,2,ROCK_SLIDE
+	db 4,3,SELFDESTRUCT
+	db 4,4,FIRE_BLAST
+	db 0
+
+	db BROCK,$1
+; Geodude/Roggenrola
+	db 1,4,ROCK_SLIDE
+; Kabuto/Omanyte
+	db 2,4,ROCK_SLIDE
+; Onix
+	db 3,1,TAKE_DOWN
+	db 3,3,BIND
+	db 3,4,ROCK_SLIDE
+	db 0
+
+	db BROCK,$2
+IF DEF(_RED)
+; Golem
+	db 1,1,STONE_EDGE
+	db 1,2,EARTHQUAKE
+	db 1,3,FIRE_BLAST
+	db 1,4,BODY_SLAM
+; Omastar
+	db 2,1,HYDRO_PUMP
+	db 2,2,BLIZZARD
+	db 2,3,ANCIENTPOWER
+	db 2,4,BITE
+; Tyrantrum
+	db 3,1,CRUNCH
+	db 3,2,ROCK_SLIDE
+	db 3,3,EARTHQUAKE
+	db 3,4,BODY_SLAM
+; Aerodactyl
+	db 4,1,WING_ATTACK
+	db 4,2,OMINOUS_WIND
+	db 4,3,IRON_HEAD
+	db 4,4,ANCIENTPOWER
+; Pinsir
+	db 5,1,X_SCISSOR
+	db 5,2,SUPERPOWER
+	db 5,3,SUBMISSION
+	db 5,4,SWORDS_DANCE
+; Steelix
+	db 6,1,EARTHQUAKE
+	db 6,2,STONE_EDGE
+	db 6,3,ROCK_POLISH
+	db 6,4,SAND_TOMB
+ENDC
+IF DEF(_BLUE)
+; Gigalith
+	db 1,1,STONE_EDGE
+	db 1,2,EARTHQUAKE
+	db 1,3,DOUBLE_EDGE
+	db 1,4,BODY_SLAM
+; Kabutops
+	db 2,1,ANCIENTPOWER
+	db 2,2,HYDRO_PUMP
+	db 2,3,SLASH
+	db 2,4,NIGHT_SLASH
+; Aurorus
+	db 3,1,THUNDER_WAVE
+	db 3,2,BLIZZARD
+	db 3,3,DARK_PULSE
+	db 3,4,THUNDERBOLT
+; Aerodactyl
+	db 4,1,WING_ATTACK
+	db 4,2,OMINOUS_WIND
+	db 4,3,IRON_HEAD
+	db 4,4,ANCIENTPOWER
+; Pinsir
+	db 5,1,X_SCISSOR
+	db 5,2,SUPERPOWER
+	db 5,3,SUBMISSION
+	db 5,4,SWORDS_DANCE
+; Steelix
+	db 6,1,EARTHQUAKE
+	db 6,2,STONE_EDGE
+	db 6,3,ROCK_POLISH
+	db 6,4,SAND_TOMB
+ENDC
+	db 0
+
+	db MISTY,$1
+IF DEF(_RED)
+; Shellder
+	db 1,4,BUBBLEBEAM
+; Wailmer
+	db 2,3,BODY_SLAM
+	db 2,4,BUBBLEBEAM
+; Starmie
+	db 3,1,HARDEN
+	db 3,2,THUNDER_WAVE
+	db 3,3,TRI_ATTACK
+	db 3,4,BUBBLEBEAM
+ENDC
+IF DEF(_BLUE)
+; Staryu
+	db 1,3,BUBBLEBEAM
+; Wailmer
+	db 2,3,BODY_SLAM
+	db 2,4,BUBBLEBEAM
+; Cloyster
+	db 3,1,WITHDRAW
+	db 3,2,AURORA_BEAM
+	db 3,3,TRI_ATTACK
+	db 3,4,BUBBLEBEAM
+ENDC
+	db 0
+
+	db MISTY,$2
+; Seaking
+	db 1,1,MEGAHORN
+	db 1,2,SURF
+	db 1,3,POISON_JAB
+	db 1,4,BLIZZARD
+; Gastrodon
+	db 2,1,EARTHQUAKE
+	db 2,2,SURF
+	db 2,3,TOXIC
+	db 2,4,RECOVER
+; Kingdra
+	db 3,1,DRAGON_PULSE
+	db 3,2,BLIZZARD
+	db 3,3,HYDRO_PUMP
+	db 3,4,AGILITY
+; Lapras
+	db 4,1,THUNDERBOLT
+	db 4,2,THUNDER_WAVE
+	db 4,3,BLIZZARD
+	db 4,4,BODY_SLAM
+; Breloom
+	db 5,1,GIGA_DRAIN
+	db 5,2,SWORDS_DANCE
+	db 5,3,SPORE
+	db 5,4,DRAIN_PUNCH
+IF DEF(_RED)
+; Starmie
+	db 6,1,THUNDER_WAVE
+	db 6,2,CONFUSE_RAY
+	db 6,3,THUNDERBOLT
+	db 6,4,HYDRO_PUMP
+ENDC
+IF DEF(_RED)
+; Cloyster
+	db 6,1,CLAMP
+	db 6,2,TOXIC
+	db 6,3,BLIZZARD
+	db 6,4,ICE_SHARD
+ENDC
+	db 0
+
+	db LT__SURGE,$1
+; Voltorb
+	db 1,1,TACKLE
+	db 1,2,SONICBOOM
+	db 1,3,SELFDESTRUCT
+	db 1,4,THUNDERBOLT
+; Joltik
+	db 2,1,X_SCISSOR
+	db 2,2,THUNDER_WAVE
+	db 2,3,SLASH
+	db 2,4,THUNDERBOLT
+; Electabuzz
+	db 3,1,THUNDERBOLT
+	db 3,2,SWIFT
+	db 3,3,SUBMISSION
+	db 3,4,SCREECH
+; Raichu
+	db 4,1,THUNDERBOLT
+	db 4,2,THUNDER_WAVE
+	db 4,3,MEGA_KICK
+	db 4,4,SURF
+	db 0
+
+	db LT__SURGE,$2
+; Jolteon
+	db 1,1,PIN_MISSILE
+	db 1,2,THUNDER_WAVE
+	db 1,3,BITE
+	db 1,4,THUNDERBOLT
+; Galvantula
+	db 2,1,GIGA_DRAIN
+	db 2,2,THUNDER_WAVE
+	db 2,3,BUG_BUZZ
+	db 2,4,THUNDERBOLT
+; Raichu
+	db 3,1,SURF
+	db 3,2,THUNDERBOLT
+	db 3,3,SUBMISSION
+	db 3,4,AMNESIA
+; Magnezone
+	db 4,1,THUNDER_WAVE
+	db 4,2,METAL_SOUND
+	db 4,3,THUNDERBOLT
+	db 4,4,FLASH_CANNON
+; Porygon-Z
+	db 5,1,BLIZZARD
+	db 5,2,AMNESIA
+	db 5,3,RECOVER
+	db 5,4,THUNDERBOLT
+; Electivire
+	db 6,1,SUBMISSION
+	db 6,2,EARTHQUAKE
+	db 6,3,FIRE_PUNCH
+	db 6,4,THUNDERBOLT
+	db 0
+
+	db ERIKA,$1
+; Victreebel
+	db 1,1,POISONPOWDER
+	db 1,2,WRAP
+	db 1,3,GIGA_DRAIN
+	db 1,4,STUN_SPORE
+; Tangela
+	db 2,1,GROWTH
+	db 2,2,DOUBLE_EDGE
+	db 2,3,BODY_SLAM
+	db 2,4,GIGA_DRAIN
+; Tropius
+	db 3,1,GIGA_DRAIN
+	db 3,2,SWORDS_DANCE
+	db 3,3,GUST
+	db 3,4,EARTHQUAKE
+IF DEF(_RED)
+; Vileplume
+	db 4,1,GIGA_DRAIN
+	db 4,2,DRAIN_PUNCH
+	db 4,3,SWORDS_DANCE
+	db 4,4,STUN_SPORE
+ENDC
+IF DEF(_BLUE)
+; Bellossom
+	db 4,1,GIGA_DRAIN
+	db 4,2,DRAIN_PUNCH
+	db 4,3,SWORDS_DANCE
+	db 4,4,SLEEP_POWDER
+ENDC
+	db 0
+
+	db ERIKA,$2
+; Tropius
+	db 1,1,SWORDS_DANCE
+	db 1,2,EARTHQUAKE
+	db 1,3,AIR_SLASH
+	db 1,4,GIGA_DRAIN
+; Tangrowth
+	db 2,1,POWER_WHIP
+	db 2,2,ANCIENTPOWER
+	db 2,3,SWORDS_DANCE
+	db 2,4,POISON_JAB
+IF DEF(_RED)
+; Vileplume
+	db 3,1,SLEEP_POWDER
+	db 3,2,STUN_SPORE
+	db 3,3,MOONBLAST
+	db 3,4,GIGA_DRAIN
+ENDC
+IF DEF(_BLUE)
+; Victreebel
+	db 3,1,LEAF_BLADE
+	db 3,2,SLEEP_POWDER
+	db 3,3,SWORDS_DANCE
+	db 3,4,HYPER_BEAM
+ENDC
+; Exeggutor
+	db 4,1,SLEEP_POWDER
+	db 4,2,LEECH_SEED
+	db 4,3,PSYCHIC_M
+	db 4,4,WOOD_HAMMER
+; Florges
+	db 5,1,PSYCHIC_M
+	db 5,2,GIGA_DRAIN
+	db 5,3,MOONBLAST
+	db 5,4,REFLECT
+; Bellossom
+	db 6,1,SLEEP_POWDER
+	db 6,2,SWORDS_DANCE
+	db 6,3,DRAIN_PUNCH
+	db 6,4,LEAF_BLADE
+	db 0
+
+	db KOGA,$1
+IF DEF(_RED)
+; Toxicroak
+	db 1,1,SLUDGE_WAVE
+	db 1,2,SUCKER_PUNCH
+	db 1,3,AMNESIA
+	db 1,4,EARTHQUAKE
+; Muk
+	db 2,1,POISON_JAB
+	db 2,2,MINIMIZE
+	db 2,3,TOXIC
+	db 2,4,THUNDER
+; Venomoth
+	db 3,1,BUG_BUZZ
+	db 3,2,PSYCHIC_M
+	db 3,3,DOUBLE_TEAM
+	db 3,4,SLEEP_POWDER
+; Tentacruel
+	db 4,1,POISON_JAB
+	db 4,2,SURF
+	db 4,3,SUPERSONIC
+	db 4,4,WRAP
+; Crobat
+	db 5,1,DOUBLE_TEAM
+	db 5,2,TOXIC
+	db 5,3,AIR_SLASH
+	db 5,4,HEAT_WAVE
+ENDC
+IF DEF(_BLUE)
+; Drapion
+	db 1,1,X_SCISSOR
+	db 1,2,NIGHT_SLASH
+	db 1,3,POISON_JAB
+	db 1,4,SWORDS_DANCE
+; Weezing
+	db 2,1,SLUDGE_WAVE
+	db 2,2,EXPLOSION
+	db 2,3,TOXIC
+	db 2,4,THUNDER
+; Venomoth
+	db 3,1,BUG_BUZZ
+	db 3,2,PSYCHIC_M
+	db 3,3,DOUBLE_TEAM
+	db 3,4,SLEEP_POWDER
+; Tentacruel
+	db 4,1,POISON_JAB
+	db 4,2,SURF
+	db 4,3,SUPERSONIC
+	db 4,4,WRAP
+; Crobat
+	db 5,1,DOUBLE_TEAM
+	db 5,2,TOXIC
+	db 5,3,AIR_SLASH
+	db 5,4,HEAT_WAVE
+ENDC
+	db 0
+
+	db KOGA,$2
+IF DEF(_RED)
+; Toxicroak
+	db 1,1,AMNESIA
+	db 1,2,SUCKER_PUNCH
+	db 1,3,SLUDGE_WAVE
+	db 1,4,EARTHQUAKE
+; Muk
+	db 2,1,SLUDGE_WAVE
+	db 2,2,FIRE_BLAST
+	db 2,3,BODY_SLAM
+	db 2,4,MINIMIZE
+ENDC
+IF DEF(_BLUE)
+; Drapion
+	db 1,1,SWORDS_DANCE
+	db 1,2,X_SCISSOR
+	db 1,3,POISON_JAB
+	db 1,4,SUBMISSION
+; Weezing
+	db 2,1,THUNDERBOLT
+	db 2,2,FIRE_BLAST
+	db 2,3,SLUDGE_WAVE
+	db 2,4,EXPLOSION
+ENDC
+; Scizor
+	db 3,1,SWORDS_DANCE
+	db 3,2,BULLET_PUNCH
+	db 3,3,X_SCISSOR
+	db 3,4,OMINOUS_WIND
+; Venomoth
+	db 4,1,DOUBLE_TEAM
+	db 4,2,TOXIC
+	db 4,3,BUG_BUZZ
+	db 4,4,PSYCHIC_M
+; Tentacruel
+	db 5,1,SWORDS_DANCE
+	db 5,2,HYDRO_PUMP
+	db 5,3,POISON_JAB
+	db 5,4,WRAP
+; Crobat
+	db 6,1,HEAT_WAVE
+	db 6,2,X_SCISSOR
+	db 6,3,AIR_SLASH
+	db 6,4,GIGA_DRAIN
+	db 0
+
+	db BLAINE,$1
+IF DEF(_RED)
+; Arcanine
+	db 1,1,EXTREMESPEED
+	db 1,2,CRUNCH
+	db 1,3,FIRE_BLAST
+	db 1,4,BODY_SLAM
+; Rapidash
+	db 2,1,MEGAHORN
+	db 2,2,POISON_JAB
+	db 2,3,DOUBLE_EDGE
+	db 2,4,FIRE_BLAST
+; Camerupt
+	db 3,1,AMNESIA
+	db 3,2,EARTHQUAKE
+	db 3,3,ROCK_SLIDE
+	db 3,4,FIRE_BLAST
+; Flareon
+	db 4,1,FIRE_BLAST
+	db 4,2,DOUBLE_EDGE
+	db 4,3,DOUBLE_TEAM
+	db 4,4,MIMIC
+; Magmortar
+	db 5,1,FIRE_BLAST
+	db 5,2,THUNDERBOLT
+	db 5,3,PSYCHIC_M
+	db 5,4,EARTHQUAKE
+ENDC
+IF DEF(_BLUE)
+; Ninetales
+	db 1,1,REFLECT
+	db 1,2,WILL_O_WISP
+	db 1,3,DARK_PULSE
+	db 1,4,FIRE_BLAST
+; Rapidash
+	db 2,1,MEGAHORN
+	db 2,2,POISON_JAB
+	db 2,3,DOUBLE_EDGE
+	db 2,4,FIRE_BLAST
+; Camerupt
+	db 3,1,AMNESIA
+	db 3,2,EARTHQUAKE
+	db 3,3,ROCK_SLIDE
+	db 3,4,FIRE_BLAST
+; Flareon
+	db 4,1,FIRE_BLAST
+	db 4,2,DOUBLE_EDGE
+	db 4,3,DOUBLE_TEAM
+	db 4,4,MIMIC
+; Magmortar
+	db 5,1,FIRE_BLAST
+	db 5,2,THUNDERBOLT
+	db 5,3,PSYCHIC_M
+	db 5,4,EARTHQUAKE
+ENDC
+	db 0
+
+	db BLAINE,$2
+IF DEF(_RED)
+; Arcanine
+	db 1,1,BODY_SLAM
+	db 1,2,CRUNCH
+	db 1,3,FIRE_BLAST
+	db 1,4,EXTREMESPEED
+ENDC
+IF DEF(_BLUE)
+; Ninetales
+	db 1,1,WILL_O_WISP
+	db 1,2,DOUBLE_TEAM
+	db 1,3,FIRE_SPIN
+	db 1,4,DARK_PULSE
+ENDC
+; Rapidash
+	db 2,1,MEGAHORN
+	db 2,2,POISON_JAB
+	db 2,3,FIRE_BLAST
+	db 2,4,DOUBLE_EDGE
+; Rhyperior
+	db 3,1,MEGAHORN
+	db 3,2,DRILL_RUN
+	db 3,3,STONE_EDGE
+	db 3,4,ROCK_WRECKER
+; Charizard
+	db 4,1,SWORDS_DANCE
+	db 4,2,AIR_SLASH
+	db 4,3,EARTHQUAKE
+	db 4,4,FIRE_BLAST
+; Cacturne
+	db 5,1,DARK_PULSE
+	db 5,2,GIGA_DRAIN
+	db 5,3,SUCKER_PUNCH
+	db 5,4,POISON_JAB
+; Magmortar
+	db 6,1,THUNDERBOLT
+	db 6,2,FIRE_BLAST
+	db 6,3,EARTHQUAKE
+	db 6,4,PSYCHIC_M
+	db 0
+
+	db SABRINA,$1
+; Sigilyph
+	db 1,1,COSMIC_POWER
+	db 1,2,PSYCHIC_M
+	db 1,3,AIR_SLASH
+	db 1,4,ICE_BEAM
+; Mr. Mime
+	db 2,1,PSYCHIC_M
+	db 2,2,THUNDER_WAVE
+	db 2,3,REFLECT
+	db 2,4,DAZZLINGLEAM
+; Malamar
+	db 3,1,SUPERPOWER
+	db 3,2,NIGHT_SLASH
+	db 3,3,PSYCHO_CUT
+	db 3,4,SLASH
+; Jynx
+	db 4,1,LOVELY_KISS
+	db 4,2,BLIZZARD
+	db 4,3,PSYCHIC
+	db 4,4,MIMIC
+; Espeon
+	db 5,1,PSYCHIC_M
+	db 5,2,RECOVER
+	db 5,3,DAZZLINGLEAM
+	db 5,4,PSYWAVE
+; Alakazam
+	db 6,1,PSYCHO_CUT
+	db 6,2,REFLECT
+	db 6,3,RECOVER
+	db 6,4,MIMIC
+	db 0
+
+	db SABRINA,$2
+; Sigilyph
+	db 1,1,ICE_BEAM
+	db 1,2,PSYCHIC_M
+	db 1,3,AIR_SLASH
+	db 1,4,THUNDER_WAVE
+; Wigglytuff
+	db 2,1,PLAY_ROUGH
+	db 2,2,PSYCHIC_M
+	db 2,3,THUNDER_WAVE
+	db 2,4,DOUBLE_EDGE
+; Malamar
+	db 3,1,SLASH
+	db 3,2,HYPNOSIS
+	db 3,3,NIGHT_SLASH
+	db 3,4,PSYCHO_CUT
+; Slowking
+	db 4,1,THUNDER_WAVE
+	db 4,2,AMNESIA
+	db 4,3,SURF
+	db 4,4,PSYCHIC_M
+; Exeggutor
+	db 5,1,SLEEP_POWDER
+	db 5,2,LEECH_SEED
+	db 5,3,PSYCHIC_M
+	db 5,4,EXPLOSION
+; Alakazam
+	db 6,1,REFLECT
+	db 6,2,RECOVER
+	db 6,3,PSYCHIC_M
+	db 6,4,DAZZLINGLEAM
+	db 0
+
+	db GIOVANNI,$1
+; Onix
+	db 1,1,BIND
+	db 1,2,SCREECH
+	db 1,3,BODY_SLAM
+	db 1,4,EARTHQUAKE
+; Rhyhorn
+	db 2,1,STOMP
+	db 2,2,ROCK_SLIDE
+	db 2,3,HORN_ATTACK
+	db 2,4,TAKE_DOWN
+; Kangaskhan
+	db 3,1,SURF
+	db 3,2,MEGA_PUNCH
+	db 3,3,COMET_PUNCH
+	db 3,4,DOUBLE_EDGE
+IF DEF(_RED)
+; Dugtrio
+	db 4,1,SLASH
+	db 4,2,DIG
+	db 4,3,ROCK_SLIDE
+	db 4,4,SAND_TOMB
+ENDC
+IF DEF(_BLUE)
+; Excadrill
+	db 4,1,DOUBLE_TEAM
+	db 4,2,ROCK_SLIDE
+	db 4,3,SLASH
+	db 4,4,DIG
+ENDC
+	db 0
+
+	db GIOVANNI,$2
+; Druddigon
+	db 1,1,EARTHQUAKE
+	db 1,2,ROCK_SLIDE
+	db 1,3,NIGHT_SLASH
+	db 1,4,SUPERPOWER
+; Cacturne
+	db 2,1,SUCKER_PUNCH
+	db 2,2,GIGA_DRAIN
+	db 2,3,DRAIN_PUNCH
+	db 2,4,REFLECT
+IF DEF(_RED)
+; Dugtrio
+	db 3,1,SLASH
+	db 3,2,EARTHQUAKE
+	db 3,3,NIGHT_SLASH
+	db 3,4,ROCK_SLIDE
+; Kabutops
+	db 4,1,ANCIENTPOWER
+	db 4,2,SURF
+	db 4,3,X_SCISSOR
+	db 4,4,SWORDS_DANCE
+; Heracross
+	db 5,1,MEGAHORN
+	db 5,2,NIGHT_SLASH
+	db 5,3,SUBMISSION
+	db 5,4,DOUBLE_EDGE
+; Nidoking
+	db 6,1,THUNDERBOLT
+	db 6,2,EARTHQUAKE
+	db 6,3,POISON_JAB
+	db 6,4,BLIZZARD
+ENDC
+IF DEF(_BLUE)
+; Excadrill
+	db 3,1,SWORDS_DANCE
+	db 3,2,EARTHQUAKE
+	db 3,3,ROCK_SLIDE
+	db 3,4,X_SCISSOR
+; Tyrantrum
+	db 4,1,ANCIENTPOWER
+	db 4,2,CRUNCH
+	db 4,3,EARTHQUAKE
+	db 4,4,DOUBLE_EDGE
+; Pinsir
+	db 5,1,X_SCISSOR
+	db 5,2,SUPERPOWER
+	db 5,3,SLASH
+	db 5,4,DOUBLE_EDGE
+; Nidoqueen
+	db 6,1,SURF
+	db 6,2,EARTHQUAKE
+	db 6,3,POISON_JAB
+	db 6,4,FIRE_BLAST
+ENDC
+	db 0
+
+	db GIOVANNI,$3
+; Excadrill
+	db 1,1,SWORDS_DANCE
+	db 1,2,EARTHQUAKE
+	db 1,3,ROCK_SLIDE
+	db 1,4,X_SCISSOR
+; Gastrodon
+	db 2,1,SURF
+	db 2,2,EARTHQUAKE
+	db 2,3,BLIZZARD
+	db 2,4,RECOVER
+IF DEF(_RED)
+; Golurk
+	db 3,1,DRAIN_PUNCH
+	db 3,2,SHADOW_PUNCH
+	db 3,3,EARTHQUAKE
+	db 3,4,ICE_BEAM
+; Nidoking
+	db 4,1,MEGAHORN
+	db 4,2,THUNDER
+	db 4,3,EARTHQUAKE
+	db 4,4,BLIZZARD
+ENDC
+IF DEF(_BLUE)
+; Sandslash
+	db 3,1,SAND_TOMB
+	db 3,2,SLASH
+	db 3,3,X_SCISSOR
+	db 3,4,ROCK_SLIDE
+; Nidoqueen
+	db 4,1,SUPERPOWER
+	db 4,2,SURF
+	db 4,3,EARTHQUAKE
+	db 4,4,FIRE_BLAST
+ENDC
+; Flygon
+	db 5,1,FISSURE
+	db 5,2,DRAGON_RUSH
+	db 5,3,BUG_BUZZ
+	db 5,4,FIRE_BLAST
+; Rhyperior
+	db 6,1,EARTHQUAKE
+	db 6,2,POISON_JAB
+	db 6,3,DOUBLE_EDGE
+	db 6,4,ROCK_WRECKER
+	db 0
+
+	db LEAGUES_PC,$1
+; Excadrill
+	db 1,1,SWORDS_DANCE
+	db 1,2,EARTHQUAKE
+	db 1,3,ROCK_SLIDE
+	db 1,4,X_SCISSOR
+; Gastrodon
+	db 2,1,SURF
+	db 2,2,EARTHQUAKE
+	db 2,3,BLIZZARD
+	db 2,4,RECOVER
+; Marowak
+	db 3,1,BLIZZARD
+	db 3,2,SWORDS_DANCE
+	db 3,3,EARTHQUAKE
+	db 3,4,FIRE_BLAST
+; Flygon
+	db 4,1,EARTHQUAKE
+	db 4,2,DRAGON_RUSH
+	db 4,3,BUG_BUZZ
+	db 4,4,FIRE_BLAST
+IF DEF(_RED)
+; Nidoking
+	db 5,1,MEGAHORN
+	db 5,2,THUNDER
+	db 5,3,EARTHQUAKE
+	db 5,4,BLIZZARD
+ENDC
+IF DEF(_BLUE)
+; Nidoqueen
+	db 5,1,SUPERPOWER
+	db 5,2,SURF
+	db 5,3,EARTHQUAKE
+	db 5,4,FIRE_BLAST
+ENDC
+; Rhyperior
+	db 6,1,DRILL_RUN
+	db 6,2,MEGAHORN
+	db 6,3,POISON_JAB
+	db 6,4,ROCK_WRECKER
+	db 0
+
+	db LORELEI,$1
+; Mamoswine
+	db 1,1,EARTHQUAKE
+	db 1,2,BLIZZARD
+	db 1,3,ANCIENTPOWER
+	db 1,4,ICE_SHARD
+; Aurorus
+	db 2,1,THUNDER_WAVE
+	db 2,2,BLIZZARD
+	db 2,3,DARK_PULSE
+	db 2,4,ANCIENTPOWER
+; Glaceon
+	db 3,1,BLIZZARD
+	db 3,2,BUBBLEBEAM
+	db 3,3,BITE
+	db 3,4,REFLECT
+; Abomasnow
+	db 4,1,BLIZZARD
+	db 4,2,WOOD_HAMMER
+	db 4,3,EARTHQUAKE
+	db 4,4,ICE_SHARD
+; Jynx
+	db 5,1,FAKE_TEARS
+	db 5,2,LOVELY_KISS
+	db 5,3,PSYCHIC_M
+	db 5,4,BLIZZARD
+; Lapras
+	db 6,1,THUNDERBOLT
+	db 6,2,HYDRO_PUMP
+	db 6,3,BLIZZARD
+	db 6,4,PSYCHIC_M
+	db 0
+
+	db LORELEI,$2
+; Mamoswine
+	db 1,1,EARTHQUAKE
+	db 1,2,BLIZZARD
+	db 1,3,ANCIENTPOWER
+	db 1,4,ICE_SHARD
+; Omastar
+	db 2,1,HYDRO_PUMP
+	db 2,2,BLIZZARD
+	db 2,3,BITE
+	db 2,4,ANCIENTPOWER
+; Cryogonal
+	db 3,1,BLIZZARD
+	db 3,2,NIGHT_SLASH
+	db 3,3,ACID_ARMOR
+	db 3,4,REFLECT
+; Abomasnow
+	db 4,1,BLIZZARD
+	db 4,2,WOOD_HAMMER
+	db 4,3,EARTHQUAKE
+	db 4,4,ICE_SHARD
+; Jynx
+	db 5,1,FAKE_TEARS
+	db 5,2,LOVELY_KISS
+	db 5,3,PSYCHIC_M
+	db 5,4,BLIZZARD
+; Lapras
+	db 6,1,THUNDERBOLT
+	db 6,2,HYDRO_PUMP
+	db 6,3,BLIZZARD
+	db 6,4,PSYCHIC_M
+	db 0
+
+	db BRUNO,$1
+; Steelix
+	db 1,1,STONE_EDGE
+	db 1,2,SAND_TOMB
+	db 1,3,ROCK_POLISH
+	db 1,4,EARTHQUAKE
+; Poliwrath
+	db 2,1,HYDRO_PUMP
+	db 2,2,SUBMISSION
+	db 2,3,POISON_JAB
+	db 2,4,HYPNOSIS
+; Heracross
+	db 3,1,MEGAHORN
+	db 3,2,EARTHQUAKE
+	db 3,3,SUBMISSION
+	db 3,4,SWORDS_DANCE
+IF DEF(_RED)
+; Primeape
+	db 4,1,CROSS_CHOP
+	db 4,2,POISON_JAB
+	db 4,3,ROCK_SLIDE
+	db 4,4,DOUBLE_EDGE
+; Hitmonchan
+	db 5,1,VACUUM_WAVE
+	db 5,2,BULLET_PUNCH
+	db 5,3,DRAIN_PUNCH
+	db 5,4,DOUBLE_EDGE
+ENDC
+IF DEF(_BLUE)
+; Pangoro
+	db 4,1,CRUNCH
+	db 4,2,SLASH
+	db 4,3,SUBMISSION
+	db 4,4,EARTHQUAKE
+; Hitmonlee
+	db 5,1,HI_JUMP_KICK
+	db 5,2,POISON_JAB
+	db 5,3,DOUBLE_EDGE
+	db 5,4,BODY_SLAM
+ENDC
+; Machamp
+	db 6,1,EARTHQUAKE
+	db 6,2,CROSS_CHOP
+	db 6,3,ROCK_SLIDE
+	db 6,4,POISON_JAB
+	db 0
+
+
+	db BRUNO,$2
+; Kangaskhan
+	db 1,1,EARTHQUAKE
+	db 1,2,DOUBLE_EDGE
+	db 1,3,DRAIN_PUNCH
+	db 1,4,BLIZZARD
+; Blastoise
+	db 2,1,HYDRO_PUMP
+	db 2,2,EARTHQUAKE
+	db 2,3,BLIZZARD
+	db 2,4,DARK_PULSE
+; Heracross
+	db 3,1,MEGAHORN
+	db 3,2,EARTHQUAKE
+	db 3,3,SUBMISSION
+	db 3,4,SWORDS_DANCE
+IF DEF(_RED)
+; Primeape
+	db 4,1,CROSS_CHOP
+	db 4,2,POISON_JAB
+	db 4,3,ROCK_SLIDE
+	db 4,4,DOUBLE_EDGE
+; Hitmonchan
+	db 5,1,VACUUM_WAVE
+	db 5,2,BULLET_PUNCH
+	db 5,3,DRAIN_PUNCH
+	db 5,4,DOUBLE_EDGE
+ENDC
+IF DEF(_BLUE)
+; Pangoro
+	db 4,1,CRUNCH
+	db 4,2,SLASH
+	db 4,3,SUBMISSION
+	db 4,4,EARTHQUAKE
+; Hitmonlee
+	db 5,1,HI_JUMP_KICK
+	db 5,2,POISON_JAB
+	db 5,3,DOUBLE_EDGE
+	db 5,4,BODY_SLAM
+ENDC
+; Machamp
+	db 6,1,EARTHQUAKE
+	db 6,2,CROSS_CHOP
+	db 6,3,ROCK_SLIDE
+	db 6,4,POISON_JAB
+	db 0
+
+	db AGATHA,$1
+IF DEF(_RED)
+; Banette
+	db 1,1,SUCKER_PUNCH
+	db 1,2,WILL_O_WISP
+	db 1,3,OMINOUS_WIND
+	db 1,4,THUNDER
+; Crobat
+	db 2,1,X_SCISSOR
+	db 2,2,AIR_SLASH
+	db 2,3,CONFUSE_RAY
+	db 2,4,GIGA_DRAIN
+; Gengar
+	db 3,1,HYPNOSIS
+	db 3,2,PSYCHIC_M
+	db 3,3,OMINOUS_WIND
+	db 3,4,THUNDERBOLT
+; Umbreon
+	db 4,1,TOXIC
+	db 4,2,MOONLIGHT
+	db 4,3,DARK_PULSE
+	db 4,4,DOUBLE_TEAM
+; Spiritomb
+	db 5,1,AMNESIA
+	db 5,2,DARK_PULSE
+	db 5,3,OMINOUS_WIND
+	db 5,4,PSYCHIC_M
+; Chandelure
+	db 6,1,FIRE_BLAST
+	db 6,2,PSYCHIC_M
+	db 6,3,WILL_O_WISP
+	db 6,4,FIRE_SPIN
+ENDC
+IF DEF(_BLUE)
+; Golurk
+	db 1,1,EARTHQUAKE
+	db 1,2,SHADOW_PUNCH
+	db 1,3,ROCK_SLIDE
+	db 1,4,ICE_BEAM
+; Crobat
+	db 2,1,X_SCISSOR
+	db 2,2,AIR_SLASH
+	db 2,3,CONFUSE_RAY
+	db 2,4,GIGA_DRAIN
+; Chandelure
+	db 3,1,FIRE_BLAST
+	db 3,2,PSYCHIC_M
+	db 3,3,WILL_O_WISP
+	db 3,4,FIRE_SPIN
+; Umbreon
+	db 4,1,TOXIC
+	db 4,2,MOONLIGHT
+	db 4,3,DARK_PULSE
+	db 4,4,DOUBLE_TEAM
+; Spiritomb
+	db 5,1,AMNESIA
+	db 5,2,DARK_PULSE
+	db 5,3,OMINOUS_WIND
+	db 5,4,PSYCHIC_M
+; Gengar
+	db 6,1,HYPNOSIS
+	db 6,2,PSYCHIC_M
+	db 6,3,OMINOUS_WIND
+	db 6,4,THUNDERBOLT
+ENDC
+	db 0
+
+	db AGATHA,$2
+IF DEF(_RED)
+; Banette
+	db 1,1,SUCKER_PUNCH
+	db 1,2,WILL_O_WISP
+	db 1,3,OMINOUS_WIND
+	db 1,4,THUNDER
+; Venusaur
+	db 2,1,SLEEP_POWDER
+	db 2,2,RAZOR_LEAF
+	db 2,3,SWORDS_DANCE
+	db 2,4,BODY_SLAM
+; Gengar
+	db 3,1,HYPNOSIS
+	db 3,2,PSYCHIC_M
+	db 3,3,OMINOUS_WIND
+	db 3,4,THUNDERBOLT
+; Umbreon
+	db 4,1,TOXIC
+	db 4,2,MOONLIGHT
+	db 4,3,DARK_PULSE
+	db 4,4,DOUBLE_TEAM
+; Spiritomb
+	db 5,1,AMNESIA
+	db 5,2,DARK_PULSE
+	db 5,3,OMINOUS_WIND
+	db 5,4,PSYCHIC_M
+; Chandelure
+	db 6,1,FIRE_BLAST
+	db 6,2,PSYCHIC_M
+	db 6,3,WILL_O_WISP
+	db 6,4,FIRE_SPIN
+ENDC
+IF DEF(_BLUE)
+; Golurk
+	db 1,1,EARTHQUAKE
+	db 1,2,SHADOW_PUNCH
+	db 1,3,ROCK_SLIDE
+	db 1,4,ICE_BEAM
+; Venusaur
+	db 2,1,SLEEP_POWDER
+	db 2,2,RAZOR_LEAF
+	db 2,3,SWORDS_DANCE
+	db 2,4,BODY_SLAM
+; Chandelure
+	db 3,1,FIRE_BLAST
+	db 3,2,PSYCHIC_M
+	db 3,3,WILL_O_WISP
+	db 3,4,FIRE_SPIN
+; Umbreon
+	db 4,1,TOXIC
+	db 4,2,MOONLIGHT
+	db 4,3,DARK_PULSE
+	db 4,4,DOUBLE_TEAM
+; Spiritomb
+	db 5,1,AMNESIA
+	db 5,2,DARK_PULSE
+	db 5,3,OMINOUS_WIND
+	db 5,4,PSYCHIC_M
+; Gengar
+	db 6,1,HYPNOSIS
+	db 6,2,PSYCHIC_M
+	db 6,3,OMINOUS_WIND
+	db 6,4,THUNDERBOLT
+ENDC
+	db 0
+
+	db LANCE,$1
+IF DEF(_RED)
+; Kingdra
+	db 1,1,HYDRO_PUMP
+	db 1,2,BLIZZARD
+	db 1,3,DRAGON_PULSE
+	db 1,4,AGILITY
+; Druddigon
+	db 2,1,SUPERPOWER
+	db 2,2,EARTHQUAKE
+	db 2,3,NIGHT_SLASH
+	db 2,4,HEAT_WAVE
+; Dragonite
+	db 3,1,HURRICANE
+	db 3,2,HYPER_BEAM
+	db 3,3,DRAGON_RUSH
+	db 3,4,ROOST
+; Aerodactyl
+	db 4,1,ANCIENTPOWER
+	db 4,2,IRON_HEAD
+	db 4,3,OMINOUS_WIND
+	db 4,4,WING_ATTACK
+; Flygon
+	db 5,1,BOOMBURST
+	db 5,2,FIRE_BLAST
+	db 5,3,EARTHQUAKE
+	db 5,4,BUG_BUZZ
+; Hydreigon
+	db 6,1,FIRE_BLAST
+	db 6,2,DRAGON_RUSH
+	db 6,3,SURF
+	db 6,4,STEEL_WING
+ENDC
+IF DEF(_BLUE)
+; Kingdra
+	db 1,1,HYDRO_PUMP
+	db 1,2,BLIZZARD
+	db 1,3,DRAGON_PULSE
+	db 1,4,AGILITY
+; Druddigon
+	db 2,1,SUPERPOWER
+	db 2,2,EARTHQUAKE
+	db 2,3,NIGHT_SLASH
+	db 2,4,HEAT_WAVE
+; Hydreigon
+	db 3,1,FIRE_BLAST
+	db 3,2,DRAGON_RUSH
+	db 3,3,SURF
+	db 3,4,HYPER_BEAM
+; Tyrantrum
+	db 4,1,ROCK_SLIDE
+	db 4,2,EARTHQUAKE
+	db 4,3,BODY_SLAM
+	db 4,4,HYPER_BEAM
+; Flygon
+	db 5,1,BOOMBURST
+	db 5,2,FIRE_BLAST
+	db 5,3,EARTHQUAKE
+	db 5,4,BUG_BUZZ
+; Dragonite
+	db 6,1,HURRICANE
+	db 6,2,STEEL_WING
+	db 6,3,DRAGON_RUSH
+	db 6,4,ROOST
+ENDC
+	db 0
+
+	db LANCE,$2
+IF DEF(_RED)
+; Kingdra
+	db 1,1,HYDRO_PUMP
+	db 1,2,BLIZZARD
+	db 1,3,DRAGON_PULSE
+	db 1,4,AGILITY
+; Charizard
+	db 2,1,SWORDS_DANCE
+	db 2,2,EARTHQUAKE
+	db 2,3,FIRE_BLAST
+	db 2,4,AIR_SLASH
+; Dragonite
+	db 3,1,HURRICANE
+	db 3,2,HYPER_BEAM
+	db 3,3,DRAGON_RUSH
+	db 3,4,ROOST
+; Aerodactyl
+	db 4,1,ANCIENTPOWER
+	db 4,2,IRON_HEAD
+	db 4,3,OMINOUS_WIND
+	db 4,4,WING_ATTACK
+; Steelix
+	db 5,1,BODY_SLAM
+	db 5,2,STONE_EDGE
+	db 5,3,EARTHQUAKE
+	db 5,4,ROCK_POLISH
+; Hydreigon
+	db 6,1,FIRE_BLAST
+	db 6,2,DRAGON_RUSH
+	db 6,3,SURF
+	db 6,4,STEEL_WING
+ENDC
+IF DEF(_BLUE)
+; Kingdra
+	db 1,1,HYDRO_PUMP
+	db 1,2,BLIZZARD
+	db 1,3,DRAGON_PULSE
+	db 1,4,AGILITY
+; Charizard
+	db 2,1,SWORDS_DANCE
+	db 2,2,EARTHQUAKE
+	db 2,3,FIRE_BLAST
+	db 2,4,AIR_SLASH
+; Hydreigon
+	db 3,1,FIRE_BLAST
+	db 3,2,DRAGON_RUSH
+	db 3,3,SURF
+	db 3,4,HYPER_BEAM
+; Tyrantrum
+	db 4,1,ROCK_SLIDE
+	db 4,2,EARTHQUAKE
+	db 4,3,BODY_SLAM
+	db 4,4,DOUBLE_EDGE
+; Steelix
+	db 5,1,BODY_SLAM
+	db 5,2,STONE_EDGE
+	db 5,3,EARTHQUAKE
+	db 5,4,ROCK_POLISH
+; Dragonite
+	db 6,1,HURRICANE
+	db 6,2,STEEL_WING
+	db 6,3,DRAGON_RUSH
+	db 6,4,ROOST
+ENDC
+	db 0
+
+	db SONY2,$7 ; Silph Co. 7F (Squirtle)
+IF DEF(_RED)
+; Exeggutor
+	db 3,1,REFLECT
+	db 3,2,LEECH_SEED
+	db 3,3,EGG_BOMB
+	db 3,4,GIGA_DRAIN
+ENDC
+IF DEF(_BLUE)
+; Ninetales
+	db 2,1,QUICK_ATTACK
+	db 2,2,DARK_PULSE
+	db 2,3,CONFUSE_RAY
+	db 2,4,FLAMETHROWER
+ENDC
+	db 0
+
+	db SONY2,$8 ; Silph Co. 7F (Bulbasaur)
+IF DEF(_RED)
+; Arcanine
+	db 3,1,CRUNCH
+	db 3,2,HEAT_WAVE
+	db 3,3,AGILITY
+	db 3,4,EXTREMESPEED
+ENDC
+IF DEF(_BLUE)
+; Cloyster
+	db 2,1,BLIZZARD
+	db 2,2,SUPERSONIC
+	db 2,3,CLAMP
+	db 2,4,AURORA_BEAM
+ENDC
+	db 0
+
+	db SONY2,$A ; Route 22 Round 2 (Squirtle)
+IF DEF(_RED)
+; Exeggutor
+	db 4,1,REFLECT
+	db 4,2,LEECH_SEED
+	db 4,3,EGG_BOMB
+	db 4,4,WOOD_HAMMER
+ENDC
+IF DEF(_BLUE)
+; Ninetales
+	db 3,1,QUICK_ATTACK
+	db 3,2,DARK_PULSE
+	db 3,3,CONFUSE_RAY
+	db 3,4,FIRE_BLAST
+ENDC
+	db 0
+
+	db SONY2,$B ; Round 22 Round 2 (Bulbasaur)
+IF DEF(_RED)
+; Arcanine
+	db 4,1,CRUNCH
+	db 4,2,FIRE_BLAST
+	db 4,3,AGILITY
+	db 4,4,DOUBLE_EDGE
+ENDC
+IF DEF(_BLUE)
+; Cloyster
+	db 3,1,POISON_JAB
+	db 3,2,SUPERSONIC
+	db 3,3,CLAMP
+	db 3,4,ICE_SHARD
+ENDC
+	db 0
+
+	db SONY3,$1 ; Champion (Squirtle)
+IF DEF(_RED)
+; Flareon
+	db 1,1,BODY_SLAM
+	db 1,2,FIRE_BLAST
+	db 1,3,BITE
+	db 1,4,FIRE_SPIN
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Flygon
+	db 3,1,BOOMBURST
+	db 3,2,EARTHQUAKE
+	db 3,3,BUG_BUZZ
+	db 3,4,FIRE_BLAST
+; Klinklang
+	db 4,1,SHIFT_GEAR
+	db 4,2,THUNDER_WAVE
+	db 4,3,GEAR_GRIND
+	db 4,4,THUNDER
+; Exeggutor
+	db 5,1,PSYCHIC_M
+	db 5,2,LEECH_SEED
+	db 5,3,SLEEP_POWDER
+	db 5,4,WOOD_HAMMER
+; Blastoise
+	db 6,1,HYDRO_PUMP
+	db 6,2,BLIZZARD
+	db 6,3,DARK_PULSE
+	db 6,4,EARTHQUAKE
+ENDC
+IF DEF(_BLUE)
+; Leafeon
+	db 1,1,SWORDS_DANCE
+	db 1,2,X_SCISSOR
+	db 1,3,LEAF_BLADE
+	db 1,4,DOUBLE_EDGE
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Mamoswine
+	db 3,1,EARTHQUAKE
+	db 3,2,ICE_SHARD
+	db 3,3,ROCK_SLIDE
+	db 3,4,BLIZZARD
+; Ninetales
+	db 4,1,AMNESIA
+	db 4,2,FIRE_BLAST
+	db 4,3,DARK_PULSE
+	db 4,4,WILL_O_WISP
+; Magnezone
+	db 5,1,THUNDER_WAVE
+	db 5,2,THUNDERBOLT
+	db 5,3,FLASH_CANNON
+	db 5,4,BARRIER
+; Blastoise
+	db 6,1,HYDRO_PUMP
+	db 6,2,BLIZZARD
+	db 6,3,DARK_PULSE
+	db 6,4,EARTHQUAKE
+ENDC
+	db 0
+
+	db SONY3,$2 ; Champion (Bulbasaur)
+IF DEF(_RED)
+; Glaceon
+	db 1,1,BLIZZARD
+	db 1,2,BITE
+	db 1,3,ICE_SHARD
+	db 1,4,BUBBLEBEAM
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Rhyperior
+	db 3,1,ROCK_WRECKER
+	db 3,2,EARTHQUAKE
+	db 3,3,POISON_JAB
+	db 3,4,SWORDS_DANCE
+; Gyarados
+	db 4,1,DOUBLE_EDGE
+	db 4,2,HYDRO_PUMP
+	db 4,3,CRUNCH
+	db 4,4,THUNDERBOLT
+; Arcanine
+	db 5,1,EXTREMESPEED
+	db 5,2,FIRE_BLAST
+	db 5,3,CRUNCH
+	db 5,4,BODY_SLAM
+; Venusaur
+	db 6,1,SYNTHESIS
+	db 6,2,SLEEP_POWDER
+	db 6,3,RAZOR_LEAF
+	db 6,4,BODY_SLAM
+ENDC
+IF DEF(_BLUE)
+; Umbreon
+	db 1,1,BODY_SLAM
+	db 1,2,CONFUSE_RAY
+	db 1,3,DARK_PULSE
+	db 1,4,MOONLIGHT
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Excadrill
+	db 3,1,DRILL_RUN
+	db 3,2,SLASH
+	db 3,3,X_SCISSOR
+	db 3,4,ROCK_SLIDE
+; Cloyster
+	db 4,1,BLIZZARD
+	db 4,2,HYDRO_PUMP
+	db 4,3,ICE_SHARD
+	db 4,4,POISON_JAB
+; Chandelure
+	db 5,1,FIRE_BLAST
+	db 5,2,WILL_O_WISP
+	db 5,3,PSYCHIC_M
+	db 5,4,OMINOUS_WIND
+; Venusaur
+	db 6,1,SYNTHESIS
+	db 6,2,SLEEP_POWDER
+	db 6,3,RAZOR_LEAF
+	db 6,4,BODY_SLAM
+ENDC
+	db 0
+
+	db SONY3,$3 ; Champion (Charmander)
+IF DEF(_RED)
+; Vaporeon
+	db 1,1,HYDRO_PUMP
+	db 1,2,BLIZZARD
+	db 1,3,BITE
+	db 1,4,ACID_ARMOR
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Donphan
+	db 3,1,EARTHQUAKE
+	db 3,2,ROCK_SLIDE
+	db 3,3,POISON_JAB
+	db 3,4,BODY_SLAM
+; Heracross
+	db 4,1,MEGAHORN
+	db 4,2,SWORDS_DANCE
+	db 4,3,SUBMISSION
+	db 4,4,EARTHQUAKE
+; Gengar
+	db 5,1,HYPNOSIS
+	db 5,2,SHADOW_PUNCH
+	db 5,3,PSYCHIC_M
+	db 5,4,THUNDERBOLT
+; Charizard
+	db 6,1,FIRE_BLAST
+	db 6,2,AIR_SLASH
+	db 6,3,SWORDS_DANCE
+	db 6,4,EARTHQUAKE
+ENDC
+IF DEF(_BLUE)
+; Jolteon
+	db 1,1,THUNDER_WAVE
+	db 1,2,THUNDERBOLT
+	db 1,3,PIN_MISSILE
+	db 1,4,BITE
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Sandslash
+	db 3,1,SAND_TOMB
+	db 3,2,X_SCISSOR
+	db 3,3,POISON_JAB
+	db 3,4,SLASH
+; Tentacruel
+	db 4,1,SLUDGE_WAVE
+	db 4,2,HYDRO_PUMP
+	db 4,3,BARRIER
+	db 4,4,DAZZLINGLEAM
+; Scizor
+	db 5,1,BULLET_PUNCH
+	db 5,2,NIGHT_SLASH
+	db 5,3,SLASH
+	db 5,4,SWORDS_DANCE
+; Charizard
+	db 6,1,FIRE_BLAST
+	db 6,2,AIR_SLASH
+	db 6,3,SWORDS_DANCE
+	db 6,4,EARTHQUAKE
+ENDC
+	db 0
+
+	db SONY3,$4 ; Champion Rematch (Squirtle)
+IF DEF(_RED)
+; Flareon
+	db 1,1,BODY_SLAM
+	db 1,2,FIRE_BLAST
+	db 1,3,BITE
+	db 1,4,FIRE_SPIN
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Flygon
+	db 3,1,BOOMBURST
+	db 3,2,EARTHQUAKE
+	db 3,3,BUG_BUZZ
+	db 3,4,FIRE_BLAST
+; Klinklang
+	db 4,1,SHIFT_GEAR
+	db 4,2,THUNDER_WAVE
+	db 4,3,GEAR_GRIND
+	db 4,4,THUNDER
+; Exeggutor
+	db 5,1,PSYCHIC_M
+	db 5,2,LEECH_SEED
+	db 5,3,SLEEP_POWDER
+	db 5,4,WOOD_HAMMER
+; Blastoise
+	db 6,1,HYDRO_PUMP
+	db 6,2,BLIZZARD
+	db 6,3,DARK_PULSE
+	db 6,4,EARTHQUAKE
+ENDC
+IF DEF(_BLUE)
+; Leafeon
+	db 1,1,SWORDS_DANCE
+	db 1,2,X_SCISSOR
+	db 1,3,LEAF_BLADE
+	db 1,4,DOUBLE_EDGE
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Mamoswine
+	db 3,1,EARTHQUAKE
+	db 3,2,ICE_SHARD
+	db 3,3,ROCK_SLIDE
+	db 3,4,BLIZZARD
+; Ninetales
+	db 4,1,AMNESIA
+	db 4,2,FIRE_BLAST
+	db 4,3,DARK_PULSE
+	db 4,4,WILL_O_WISP
+; Magnezone
+	db 5,1,THUNDER_WAVE
+	db 5,2,THUNDERBOLT
+	db 5,3,FLASH_CANNON
+	db 5,4,BARRIER
+; Blastoise
+	db 6,1,HYDRO_PUMP
+	db 6,2,BLIZZARD
+	db 6,3,DARK_PULSE
+	db 6,4,EARTHQUAKE
+ENDC
+	db 0
+
+	db SONY3,$5 ; Champion Rematch (Bulbasaur)
+IF DEF(_RED)
+; Glaceon
+	db 1,1,BLIZZARD
+	db 1,2,BITE
+	db 1,3,ICE_SHARD
+	db 1,4,BUBBLEBEAM
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Rhyperior
+	db 3,1,ROCK_WRECKER
+	db 3,2,EARTHQUAKE
+	db 3,3,POISON_JAB
+	db 3,4,SWORDS_DANCE
+; Gyarados
+	db 4,1,DOUBLE_EDGE
+	db 4,2,HYDRO_PUMP
+	db 4,3,CRUNCH
+	db 4,4,THUNDERBOLT
+; Arcanine
+	db 5,1,EXTREMESPEED
+	db 5,2,FIRE_BLAST
+	db 5,3,CRUNCH
+	db 5,4,BODY_SLAM
+; Venusaur
+	db 6,1,SYNTHESIS
+	db 6,2,SLEEP_POWDER
+	db 6,3,RAZOR_LEAF
+	db 6,4,BODY_SLAM
+ENDC
+IF DEF(_BLUE)
+; Umbreon
+	db 1,1,BODY_SLAM
+	db 1,2,CONFUSE_RAY
+	db 1,3,DARK_PULSE
+	db 1,4,MOONLIGHT
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Excadrill
+	db 3,1,DRILL_RUN
+	db 3,2,SLASH
+	db 3,3,X_SCISSOR
+	db 3,4,ROCK_SLIDE
+; Cloyster
+	db 4,1,BLIZZARD
+	db 4,2,HYDRO_PUMP
+	db 4,3,ICE_SHARD
+	db 4,4,POISON_JAB
+; Chandelure
+	db 5,1,FIRE_BLAST
+	db 5,2,WILL_O_WISP
+	db 5,3,PSYCHIC_M
+	db 5,4,OMINOUS_WIND
+; Venusaur
+	db 6,1,SYNTHESIS
+	db 6,2,SLEEP_POWDER
+	db 6,3,RAZOR_LEAF
+	db 6,4,BODY_SLAM
+ENDC
+	db 0
+
+	db SONY3,$6 ; Champion Rematch (Charmander)
+IF DEF(_RED)
+; Vaporeon
+	db 1,1,HYDRO_PUMP
+	db 1,2,BLIZZARD
+	db 1,3,BITE
+	db 1,4,ACID_ARMOR
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Donphan
+	db 3,1,EARTHQUAKE
+	db 3,2,ROCK_SLIDE
+	db 3,3,POISON_JAB
+	db 3,4,BODY_SLAM
+; Heracross
+	db 4,1,MEGAHORN
+	db 4,2,SWORDS_DANCE
+	db 4,3,SUBMISSION
+	db 4,4,EARTHQUAKE
+; Gengar
+	db 5,1,HYPNOSIS
+	db 5,2,SHADOW_PUNCH
+	db 5,3,PSYCHIC_M
+	db 5,4,THUNDERBOLT
+; Charizard
+	db 6,1,FIRE_BLAST
+	db 6,2,AIR_SLASH
+	db 6,3,SWORDS_DANCE
+	db 6,4,EARTHQUAKE
+ENDC
+IF DEF(_BLUE)
+; Jolteon
+	db 1,1,THUNDER_WAVE
+	db 1,2,THUNDERBOLT
+	db 1,3,PIN_MISSILE
+	db 1,4,BITE
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Sandslash
+	db 3,1,SAND_TOMB
+	db 3,2,X_SCISSOR
+	db 3,3,POISON_JAB
+	db 3,4,SLASH
+; Tentacruel
+	db 4,1,SLUDGE_WAVE
+	db 4,2,HYDRO_PUMP
+	db 4,3,BARRIER
+	db 4,4,DAZZLINGLEAM
+; Scizor
+	db 5,1,BULLET_PUNCH
+	db 5,2,NIGHT_SLASH
+	db 5,3,SLASH
+	db 5,4,SWORDS_DANCE
+; Charizard
+	db 6,1,FIRE_BLAST
+	db 6,2,AIR_SLASH
+	db 6,3,SWORDS_DANCE
+	db 6,4,EARTHQUAKE
+ENDC
+	db 0
+
+	db PROF_OAK,$1 ; Final Boss (Bulbasaur)
+; Tauros
+	db 1,1,BODY_SLAM
+	db 1,2,EARTHQUAKE
+	db 1,3,BLIZZARD
+	db 1,4,DOUBLE_EDGE
+;Steelix
+	db 2,1,EARTHQUAKE
+	db 2,2,STONE_EDGE
+	db 2,3,ROCK_POLISH
+	db 2,4,BODY_SLAM
+; Hypno
+	db 3,1,AMNESIA
+	db 3,2,PSYCHIC_M
+	db 3,3,THUNDER_WAVE
+	db 3,4,DAZZLINGLEAM
+; Magmortar
+	db 4,1,THUNDERBOLT
+	db 4,2,FIRE_BLAST
+	db 4,3,PSYCHIC_M
+	db 4,4,EARTHQUAKE
+; Dragonite
+	db 5,1,HURRICANE
+	db 5,2,DRAGON_RUSH
+	db 5,3,ROOST
+	db 5,4,BLIZZARD
+; Venusaur
+	db 6,1,SLEEP_POWDER
+	db 6,2,RAZOR_LEAF
+	db 6,3,SWORDS_DANCE
+	db 6,4,BODY_SLAM
+	db 0
+
+	db PROF_OAK,$2 ; Final Boss (Charmander)
+; Tauros
+	db 1,1,BODY_SLAM
+	db 1,2,EARTHQUAKE
+	db 1,3,BLIZZARD
+	db 1,4,DOUBLE_EDGE
+; Magnezone
+	db 2,1,THUNDER_WAVE
+	db 2,2,THUNDERBOLT
+	db 2,3,FLASH_CANNON
+	db 2,4,METAL_SOUND
+; Slowking
+	db 3,1,AMNESIA
+	db 3,2,THUNDER_WAVE
+	db 3,3,SURF
+	db 3,4,PSYCHIC_M
+; Spiritomb
+	db 4,1,OMINOUS_WIND
+	db 4,2,AMNESIA
+	db 4,3,PSYCHIC_M
+	db 4,4,DARK_PULSE
+; Dragonite
+	db 5,1,HURRICANE
+	db 5,2,DRAGON_RUSH
+	db 5,3,ROOST
+	db 5,4,BLIZZARD
+; Charizard
+	db 6,1,FIRE_BLAST
+	db 6,2,SWORDS_DANCE
+	db 6,3,EARTHQUAKE
+	db 6,4,BODY_SLAM
+	db 0
+
+	db PROF_OAK,$3 ; Final Boss (Squirtle)
+; Tauros
+	db 1,1,BODY_SLAM
+	db 1,2,EARTHQUAKE
+	db 1,3,BLIZZARD
+	db 1,4,DOUBLE_EDGE
+; Excadrill
+	db 2,1,DRILL_RUN
+	db 2,2,SLASH
+	db 2,3,ROCK_SLIDE
+	db 2,4,X_SCISSOR
+; Poliwrath
+	db 3,1,HYDRO_PUMP
+	db 3,2,SUBMISSION
+	db 3,3,POISON_JAB
+	db 3,4,HYPNOSIS
+; Electivire
+	db 4,1,THUNDERBOLT
+	db 4,2,FIRE_PUNCH
+	db 4,3,EARTHQUAKE
+	db 4,4,ROCK_SLIDE
+; Dragonite
+	db 5,1,HURRICANE
+	db 5,2,DRAGON_RUSH
+	db 5,3,ROOST
+	db 5,4,BLIZZARD
+; Blastoise
+	db 6,1,BLIZZARD
+	db 6,2,EARTHQUAKE
+	db 6,3,HYDRO_PUMP
+	db 6,4,DARK_PULSE
+	db 0
+
+	db $ff
+ELSE
+; Normal Mode
+	db COOLTRAINER_M,$1 ; Viridian Gym
+;Nidorino/rina
+	db 1,1,POISON_JAB
+;Nidoking/queen
+	db 2,2,POISON_JAB
+	db 0
+
+	db COOLTRAINER_M,$2 ; Victory Road
+; Exeggutor
+	db 1,1,PSYCHIC_M
+	db 1,2,REFLECT
+	db 1,3,STUN_SPORE
+	db 1,4,SOLARBEAM
+IF DEF(_RED)
+; Cloyster
+	db 2,1,SUPERSONIC
+	db 2,2,CLAMP
+	db 2,3,ICE_BEAM
+	db 2,4,LEER
+; Arcanine
+	db 3,1,QUICK_ATTACK
+	db 3,2,CONFUSE_RAY
+	db 3,3,FIRE_BLAST
+	db 3,4,FIRE_SPIN
+ENDC
+IF DEF(_BLUE)
+; Starmie
+	db 2,1,RECOVER
+	db 2,2,BUBBLEBEAM
+	db 2,3,MINIMIZE
+	db 2,4,LIGHT_SCREEN
+; Ninetales
+	db 3,1,TAKE_DOWN
+	db 3,2,AGILITY
+	db 3,3,CRUNCH
+	db 3,4,FIRE_BLAST
+ENDC
+; Snorlax
+	db 4,4,EARTHQUAKE
+	db 0
+
+	db COOLTRAINER_M,$3 ; Victory Road
+; Kingler
+	db 1,1,MUD_SHOT
+	db 1,2,GUILLOTINE
+	db 1,3,CRABHAMMER
+	db 1,4,X_SCISSOR
+; Mienshao
+	db 2,2,ROCK_SLIDE
+	db 2,3,SWIFT
+	db 2,4,JUMP_KICK
+; Scizor
+	db 3,4,STEEL_WING
+IF DEF(_RED)
+; Starmie
+	db 4,1,RECOVER
+	db 4,2,BUBBLEBEAM
+	db 4,3,MINIMIZE
+	db 4,4,LIGHT_SCREEN
+ENDC
+IF DEF(_BLUE)
+; Cloyster
+	db 4,1,SUPERSONIC
+	db 4,2,CLAMP
+	db 4,3,ICE_BEAM
+ENDC
+; Nidoking
+	db 5,2,DOUBLE_KICK
+	db 5,3,EARTHQUAKE
+	db 0
+
+	db COOLTRAINER_M,$5 ; Victory Road
+; Ivysaur
+	db 1,1,LEECH_SEED
+	db 1,2,TOXIC
+IF DEF(_RED)
+; Wartortle
+	db 2,3,ICE_BEAM
+; Charmeleon
+	db 3,4,FIRE_BLAST
+; Charizard
+	db 4,2,OMINOUS_WIND
+ENDC
+IF DEF(_BLUE)
+; Charmeleon
+	db 2,4,FIRE_BLAST
+; Wartortle
+	db 3,3,ICE_BEAM
+; Blastoise
+	db 4,1,BUBBLEBEAM
+ENDC
+	db 0
+
+	db COOLTRAINER_M,$9 ; Viridian Gym
+IF DEF(_BLUE)
+; Sandslash
+	db 1,4,X_SCISSOR
+; Excadrill
+	db 2,1,COUNTER
+ENDC
+	db 0
+
+	db COOLTRAINER_M,$A ; Viridian Gym
+; Vibrava
+	db 1,1,EARTHQUAKE
+	db 0
+
+	db COOLTRAINER_F,$1 ; Celadon Gym
+IF DEF(_RED)
+; Breloom
+	db 3,3,BODY_SLAM
+ENDC
+IF DEF(_BLUE)
+; Parasect
+	db 3,4,X_SCISSOR
+ENDC
+	db 0
+
+	db COOLTRAINER_F,$2 ; Victory Road
+IF DEF(_RED)
+; Slowking
+	db 1,2,PSYCHIC_M
+; Kangaskhan
+	db 2,4,DRAIN_PUNCH
+; Tangrowth
+	db 3,2,EARTHQUAKE
+; Galvantula
+	db 4,1,THUNDER_WAVE
+	db 4,3,GIGA_DRAIN
+ENDC
+IF DEF(_BLUE)
+; Kingdra
+	db 1,4,ICE_BEAM
+; Kangaskhan
+	db 2,4,DRAIN_PUNCH
+; Bellossom
+	db 3,1,STUN_SPORE
+	db 3,2,SLEEP_POWDER
+	db 3,3,GIGA_DRAIN
+	db 3,4,DAZZLINGLEAM
+; Galvantula
+	db 4,1,THUNDER_WAVE
+	db 4,3,GIGA_DRAIN
+ENDC
+	db 0
+
+	db COOLTRAINER_F,$3 ; Victory Road
+; Florges
+	db 1,1,SWIFT
+	db 1,2,PETAL_DANCE
+	db 1,3,MOONBLAST
+	db 1,4,REFLECT
+; Dewgong
+	db 2,4,ICE_BEAM
+; Chansey
+	db 3,2,PSYCHIC_M
+; Nidoqueen
+	db 4,1,EARTHQUAKE
+; Ampharos
+	db 5,2,SEISMIC_TOSS
+	db 0
+
+	db COOLTRAINER_F,$5 ; Victory Road
+IF DEF(_RED)
+; Persian
+	db 1,4,DOUBLE_EDGE
+; Ninetales
+	db 2,1,QUICK_ATTACK
+	db 2,4,DARK_PULSE
+; Raichu
+	db 3,1,SUBMISSION
+; Butterfree
+	db 4,1,SLEEP_POWDER
+	db 4,3,PSYCHIC_M
+ENDC
+IF DEF(_BLUE)
+; Liepard
+	db 1,2,THUNDER_WAVE
+; Arcanine
+	db 2,1,TAKE_DOWN
+	db 2,2,DIG
+	db 2,3,CRUNCH
+	db 2,4,FLAMETHROWER
+; Raichu
+	db 3,1,SUBMISSION
+; Beedrill
+	db 4,2,SWORDS_DANCE
+ENDC
+	db 0
+
+	db ROCKET,$1E ; Silph Co. 6F Brother
+IF DEF(_RED)
+; Victreebel
+	db 3,1,SWORDS_DANCE
+	db 3,3,ACID
+ENDC
+IF DEF(_BLUE)
+; Vileplume
+	db 3,1,DAZZLINGLEAM
+	db 3,3,ACID
+ENDC
+	db 0
+
+	db ROCKET,$21 ; Silph Co. 7F Brother
+; Sandslash
+	db 3,4,EARTHQUAKE
+	db 0
+
+	db ROCKET,$24 ; Silph Co. 8F Brother
+; Dodrio
+	db 3,2,DOUBLE_EDGE
+	db 0
+
+	db ROCKET,$26 ; Silph Co. 9F Brother
+; Gigalith/Golem
+	db 3,3,EARTHQUAKE
+	db 0
+
+	db BROCK,$1
+; Onix
+	db 2,3,BIND
+	db 2,4,ROCK_SLIDE
+	db 0
+
+	db BROCK,$2
+IF DEF(_RED)
+; Golem
+	db 1,1,EARTHQUAKE
+	db 1,2,STONE_EDGE
+	db 1,3,FIRE_BLAST
+	db 1,4,BODY_SLAM
+; Rhydon
+	db 2,1,ROCK_SLIDE
+	db 2,2,EARTHQUAKE
+	db 2,3,TAKE_DOWN
+	db 2,4,LEER
+; Omastar
+	db 3,1,BITE
+	db 3,2,ANCIENTPOWER
+	db 3,3,HYDRO_PUMP
+	db 3,4,MUD_SHOT
+; Tyrantrum
+	db 4,1,ROCK_SLIDE
+	db 4,2,CRUNCH
+	db 4,3,EARTHQUAKE
+	db 4,4,THRASH
+; Onix
+	db 5,1,EARTHQUAKE
+	db 5,2,ROCK_SLIDE
+	db 5,3,SCREECH
+	db 5,4,BIND
+ENDC
+IF DEF(_BLUE)
+; Gigalith
+	db 1,1,EARTHQUAKE
+	db 1,2,STONE_EDGE
+	db 1,3,SOLARBEAM
+	db 1,4,BODY_SLAM
+; Rhydon
+	db 2,1,ROCK_SLIDE
+	db 2,2,EARTHQUAKE
+	db 2,3,TAKE_DOWN
+	db 2,4,LEER
+; Kabutops
+	db 3,1,NIGHT_SLASH
+	db 3,2,SLASH
+	db 3,3,HYDRO_PUMP
+	db 3,4,ANCIENTPOWER
+; Aurorus
+	db 4,1,THUNDER_WAVE
+	db 4,2,ICE_BEAM
+	db 4,3,ANCIENTPOWER
+	db 4,4,LIGHT_SCREEN
+; Onix
+	db 5,1,EARTHQUAKE
+	db 5,2,ROCK_SLIDE
+	db 5,3,SCREECH
+	db 5,4,BIND
+ENDC
+	db 0
+
+	db MISTY,$1
+; Starmie/Cloyster
+	db 2,4,BUBBLEBEAM
+	db 0
+
+	db MISTY,$2
+; Golduck
+	db 1,1,AMNESIA
+	db 1,2,SURF
+	db 1,3,AQUA_JET
+	db 1,4,PSYCHIC_M
+; Gastrodon
+	db 2,1,EARTHQUAKE
+	db 2,2,RECOVER
+	db 2,3,SURF
+	db 2,4,BODY_SLAM
+; Lapras
+	db 3,1,BLIZZARD
+	db 3,2,SURF
+	db 3,3,MIST
+	db 3,4,CONFUSE_RAY
+IF DEF(_RED)
+; Starmie
+	db 4,1,CONFUSE_RAY
+	db 4,2,RECOVER
+	db 4,3,SURF
+	db 4,4,ICE_BEAM
+ENDC
+IF DEF(_BLUE)
+; Cloyster
+	db 4,1,SUPERSONIC
+	db 4,2,SURF
+	db 4,3,BLIZZARD
+	db 4,4,ICE_SHARD
+ENDC
+	db 0
+
+	db LT__SURGE,$1
+; Raichu
+	db 3,1,THUNDERBOLT
+	db 3,2,MEGA_PUNCH
+	db 3,3,MEGA_KICK
+	db 3,4,GROWL
+	db 0
+
+	db LT__SURGE,$2
+; Raichu
+	db 1,1,THUNDERBOLT
+	db 1,2,MEGA_PUNCH
+	db 1,3,MEGA_KICK
+	db 1,4,THUNDER_WAVE
+; Electrode
+	db 2,1,EXPLOSION
+	db 2,2,THUNDERBOLT
+	db 2,3,DOUBLE_TEAM
+	db 2,4,SWIFT
+; Galvantula
+	db 3,1,BUG_BUZZ
+	db 3,2,SLASH
+	db 3,3,THUNDERBOLT
+	db 3,4,POISON_JAB
+; Magneton
+	db 4,1,FLASH_CANNON
+	db 4,2,ZAP_CANNON
+	db 4,3,DOUBLE_TEAM
+	db 4,4,SWIFT
+; Electabuzz
+	db 5,1,LIGHT_SCREEN
+	db 5,2,THUNDERPUNCH
+	db 5,3,THUNDER
+	db 5,4,SUBMISSION
+	db 0
+
+	db ERIKA,$1
+; Victreebel
+	db 1,1,POISONPOWDER
+	db 1,2,WRAP
+	db 1,3,ACID
+	db 1,4,GIGA_DRAIN
+; Tangela
+	db 2,4,GIGA_DRAIN
+; Vileplume/Bellossom
+	db 3,1,GIGA_DRAIN
+	db 3,2,DRAIN_PUNCH
+	db 3,3,STUN_SPORE
+	db 3,4,SLEEP_POWDER
+	db 0
+
+	db ERIKA,$2
+; Tangela
+	db 1,1,SLEEP_POWDER
+	db 1,2,POWER_WHIP
+	db 1,3,BIND
+	db 1,4,GIGA_DRAIN
+IF DEF(_RED)
+; Victreebel
+	db 2,1,LEAF_BLADE
+	db 2,2,STUN_SPORE
+	db 2,3,ACID
+	db 2,4,WRAP
+ENDC
+IF DEF(_BLUE)
+; Vileplume
+	db 2,1,PETAL_DANCE
+	db 2,2,POISONPOWDER
+	db 2,3,GIGA_DRAIN
+	db 2,4,ACID
+ENDC
+; Tropius
+	db 3,1,SYNTHESIS
+	db 3,2,GIGA_DRAIN
+	db 3,3,AIR_SLASH
+	db 3,4,STOMP
+; Bellossom
+	db 4,1,MOONLIGHT
+	db 4,2,LEAF_BLADE
+	db 4,3,MOONBLAST
+	db 4,4,PETAL_DANCE
+	db 0
+
+	db KOGA,$1
+IF DEF(_RED)
+; Toxicroak
+	db 1,1,POISON_JAB
+	db 1,3,AMNESIA
+; Muk
+	db 2,2,TOXIC
+ENDC
+IF DEF(_BLUE)
+; Drapion
+	db 1,1,TOXIC
+	db 1,3,X_SCISSOR
+	db 2,1,SMOKESCREEN
+; Weezing
+	db 2,3,TOXIC
+ENDC
+; Venomoth
+	db 3,1,TOXIC
+	db 3,2,SUPERSONIC
+	db 3,3,OMINOUS_WIND
+	db 3,4,PSYBEAM
+; Crobat
+	db 4,1,TOXIC
+	db 4,2,DOUBLE_TEAM
+	db 4,3,BITE
+	db 4,4,CONFUSE_RAY
+	db 0
+
+	db KOGA,$2
+IF DEF(_RED)
+; Toxicroak
+	db 1,1,POISON_JAB
+	db 1,2,AMNESIA
+	db 1,3,SUCKER_PUNCH
+	db 1,4,TOXIC
+; Venomoth
+	db 2,1,PSYCHIC_M
+	db 2,2,BUG_BUZZ
+	db 2,3,SUPERSONIC
+	db 2,4,TOXIC
+; Scizor
+	db 3,1,X_SCISSOR
+	db 3,2,BULLET_PUNCH
+	db 3,3,DOUBLE_TEAM
+	db 3,4,NIGHT_SLASH
+; Muk
+	db 4,1,SLUDGE_WAVE
+	db 4,2,MINIMIZE
+	db 4,3,ACID_ARMOR
+	db 4,4,TOXIC
+; Crobat
+	db 5,1,DOUBLE_TEAM
+	db 5,2,AIR_SLASH
+	db 5,3,CONFUSE_RAY
+	db 5,4,HEAT_WAVE
+ENDC
+IF DEF(_BLUE)
+; Drapion
+	db 1,1,POISON_JAB
+	db 1,2,NIGHT_SLASH
+	db 1,3,PIN_MISSILE
+	db 1,4,TOXIC
+; Venomoth
+	db 2,1,PSYCHIC_M
+	db 2,2,BUG_BUZZ
+	db 2,3,SUPERSONIC
+	db 2,4,TOXIC
+; Scizor
+	db 3,1,X_SCISSOR
+	db 3,2,BULLET_PUNCH
+	db 3,3,DOUBLE_TEAM
+	db 3,4,NIGHT_SLASH
+; Weezing
+	db 4,1,SLUDGE_WAVE
+	db 4,2,THUNDER
+	db 4,3,EXPLOSION
+	db 4,4,TOXIC
+; Crobat
+	db 5,1,DOUBLE_TEAM
+	db 5,2,AIR_SLASH
+	db 5,3,CONFUSE_RAY
+	db 5,4,HEAT_WAVE
+ENDC
+	db 0
+
+	db BLAINE,$1
+IF DEF(_RED)
+; Vulpix
+	db 1,3,FIRE_BLAST
+; Rapidash
+	db 2,3,BODY_SLAM
+	db 2,4,FIRE_BLAST
+; Camerupt
+	db 3,4,FIRE_BLAST
+; Ninetales
+	db 4,1,REFLECT
+	db 4,2,CONFUSE_RAY
+	db 4,3,FIRE_SPIN
+	db 4,4,FIRE_BLAST
+; Magmar
+	db 5,1,CONFUSE_RAY
+	db 5,2,SMOKESCREEN
+	db 5,3,SKULL_BASH
+	db 5,4,FIRE_BLAST
+ENDC
+IF DEF(_BLUE)
+; Growlithe
+	db 1,3,FIRE_BLAST
+; Rapidash
+	db 2,3,BODY_SLAM
+	db 2,4,FIRE_BLAST
+; Camerupt
+	db 3,4,FIRE_BLAST
+; Arcanine
+	db 4,1,CRUNCH
+	db 4,2,DOUBLE_EDGE
+	db 4,3,LEER
+	db 4,4,FIRE_BLAST
+; Magmar
+	db 5,1,CONFUSE_RAY
+	db 5,2,SMOKESCREEN
+	db 5,3,SKULL_BASH
+	db 5,4,FIRE_BLAST
+ENDC
+	db 0
+
+	db BLAINE,$2
+IF DEF(_RED)
+; Ninetales
+	db 1,1,DARK_PULSE
+	db 1,2,FIRE_BLAST
+	db 1,3,REFLECT
+	db 1,4,CONFUSE_RAY
+ENDC
+IF DEF(_BLUE)
+; Arcanine
+	db 1,1,FIRE_BLAST
+	db 1,2,CRUNCH
+	db 1,3,LEER
+	db 1,4,EXTREMESPEED
+ENDC
+; Magmar
+	db 2,1,FIRE_BLAST
+	db 2,2,PSYCHIC_M
+	db 2,3,CONFUSE_RAY
+	db 2,4,SMOKESCREEN
+; Camerupt
+	db 3,1,FIRE_BLAST
+	db 3,2,EARTHQUAKE
+	db 3,3,ROCK_SLIDE
+	db 3,4,AMNESIA
+; Flareon
+	db 4,1,BITE
+	db 4,2,FIRE_BLAST
+	db 4,3,QUICK_ATTACK
+	db 4,4,DOUBLE_EDGE
+; Rapidash
+	db 5,1,FIRE_SPIN
+	db 5,2,MEGAHORN
+	db 5,3,FIRE_BLAST
+	db 5,4,FURY_ATTACK
+	db 0
+
+	db SABRINA,$1
+; Mr. Mime
+	db 2,4,DAZZLINGLEAM
+; Malamar
+	db 3,1,PSYWAVE
+; Alakazam
+	db 4,1,PSYWAVE
+	db 0
+
+	db SABRINA,$2
+; Espeon
+	db 1,1,PSYCHIC_M
+	db 1,2,SAND_ATTACK
+	db 1,3,SWIFT
+	db 1,4,DAZZLINGLEAM
+; Malamar
+	db 2,1,SLASH
+	db 2,2,PSYCHO_CUT
+	db 2,3,NIGHT_SLASH
+	db 2,4,REFLECT
+; Mr. Mime
+	db 3,1,BARRIER
+	db 3,2,REFLECT
+	db 3,3,DAZZLINGLEAM
+	db 3,4,PSYCHIC_M
+; Alakazam
+	db 4,1,PSYCHO_CUT
+	db 4,2,RECOVER
+	db 4,3,REFLECT
+	db 4,4,DAZZLINGLEAM
+	db 0
+
+	db GIOVANNI,$1
+; Onix
+	db 1,4,EARTHQUAKE
+; Rhyhorn
+	db 2,2,ROCK_SLIDE
+; Kangaskhan
+	db 3,4,TAKE_DOWN
+	db 0
+
+	db GIOVANNI,$2
+; Cacturne
+	db 1,1,SAND_ATTACK
+	db 1,2,GROWTH
+	db 1,3,LEECH_SEED
+	db 1,4,DARK_PULSE
+; Kangaskhan
+	db 2,1,TAIL_WHIP
+	db 2,2,TAKE_DOWN
+	db 2,3,SUBMISSION
+	db 2,4,BITE
+IF DEF(_RED)
+; Heracross
+	db 3,1,HORN_ATTACK
+	db 3,2,COUNTER
+	db 3,3,X_SCISSOR
+	db 3,4,FURY_ATTACK
+; Nidoking
+	db 4,2,THUNDERBOLT
+ENDC
+IF DEF(_BLUE)
+; Pinsir
+	db 3,1,GUILLOTINE
+	db 3,2,VICEGRIP
+	db 3,3,X_SCISSOR
+	db 3,4,BIND
+; Nidoqueen
+	db 4,2,SURF
+ENDC
+	db 0
+
+	db GIOVANNI,$3
+; Steelix
+	db 1,2,EARTHQUAKE
+IF DEF(_RED)
+; Dugtrio
+	db 2,1,ROCK_SLIDE
+	db 2,2,FISSURE
+	db 2,3,SAND_ATTACK
+	db 2,4,DOUBLE_TEAM
+; Golurk
+	db 3,1,MEGA_PUNCH
+	db 3,2,SHADOW_PUNCH
+	db 3,3,EARTHQUAKE
+	db 3,4,ICE_BEAM
+; Nidoking
+	db 4,1,MEGAHORN
+	db 4,2,THUNDER
+	db 4,3,EARTHQUAKE
+	db 4,4,THRASH
+ENDC
+IF DEF(_BLUE)
+; Excadrill
+	db 2,1,ROCK_SLIDE
+	db 2,2,FISSURE
+	db 2,3,SLASH
+	db 2,4,EARTHQUAKE
+; Sandslash
+	db 3,1,X_SCISSOR
+	db 3,2,SLASH
+	db 3,3,SWORDS_DANCE
+	db 3,4,ROCK_SLIDE
+; Nidoqueen
+	db 4,1,SUPERPOWER
+	db 4,2,BLIZZARD
+	db 4,3,EARTHQUAKE
+	db 4,4,BODY_SLAM
+ENDC
+; Rhyperior
+	db 5,1,LEER
+	db 5,2,HORN_DRILL
+	db 5,3,EARTHQUAKE
+	db 5,4,ROCK_WRECKER
+	db 0
+
+	db LEAGUES_PC,$1
+; Steelix
+	db 1,1,ROCK_SLIDE
+	db 1,2,EARTHQUAKE
+	db 1,3,ROCK_POLISH
+	db 1,4,CRUNCH
+IF DEF(_RED)
+; Dugtrio
+	db 2,1,ROCK_SLIDE
+	db 2,2,FISSURE
+	db 2,3,SAND_ATTACK
+	db 2,4,DOUBLE_TEAM
+; Marowak
+	db 3,1,BONEMERANG
+	db 3,2,SWORDS_DANCE
+	db 3,3,FIRE_BLAST
+	db 3,4,BODY_SLAM
+; Golurk
+	db 4,1,MEGA_PUNCH
+	db 4,2,SHADOW_PUNCH
+	db 4,3,EARTHQUAKE
+	db 4,4,ICE_BEAM
+; Nidoking
+	db 5,1,MEGAHORN
+	db 5,2,THUNDER
+	db 5,3,EARTHQUAKE
+	db 5,4,THRASH
+ENDC
+IF DEF(_BLUE)
+; Excadrill
+	db 2,1,ROCK_SLIDE
+	db 2,2,FISSURE
+	db 2,3,SLASH
+	db 2,4,EARTHQUAKE
+; Marowak
+	db 3,1,BONEMERANG
+	db 3,2,SWORDS_DANCE
+	db 3,3,FIRE_BLAST
+	db 3,4,BODY_SLAM
+; Sandslash
+	db 4,1,X_SCISSOR
+	db 4,2,SLASH
+	db 4,3,SWORDS_DANCE
+	db 4,4,ROCK_SLIDE
+; Nidoqueen
+	db 5,1,SUPERPOWER
+	db 5,2,BLIZZARD
+	db 5,3,EARTHQUAKE
+	db 5,4,BODY_SLAM
+ENDC
+; Rhyperior
+	db 6,1,MEGAHORN
+	db 6,2,DRILL_RUN
+	db 6,3,TAKE_DOWN
+	db 6,4,ROCK_WRECKER
+	db 0
+
+	db LORELEI,$1
+; Dewgong
+	db 1,1,BUBBLEBEAM
+	db 1,2,REST
+	db 1,3,ICE_BEAM
+	db 1,4,AQUA_JET
+; Cloyster
+	db 2,1,CLAMP
+	db 2,2,SPIKE_CANNON
+	db 2,3,ICE_BEAM
+	db 2,4,ICE_SHARD
+; Jynx
+	db 4,3,LOVELY_KISS
+	db 4,4,PSYCHIC_M
+; Lapras
+	db 5,3,BLIZZARD
+	db 0
+
+	db LORELEI,$2
+; Piloswine
+	db 1,1,EARTHQUAKE
+	db 1,2,BLIZZARD
+	db 1,3,ROCK_SLIDE
+	db 1,4,DOUBLE_EDGE
+; Cloyster
+	db 2,1,SPIKE_CANNON
+	db 2,2,SURF
+	db 2,3,ICE_BEAM
+	db 2,4,SUPERSONIC
+; Abomasnow
+	db 3,1,WOOD_HAMMER
+	db 3,2,ICE_BEAM
+	db 3,3,ICE_SHARD
+	db 3,4,MEGA_PUNCH
+; Jynx
+	db 4,1,PSYCHIC_M
+	db 4,2,ICE_BEAM
+	db 4,3,LOVELY_KISS
+	db 4,4,FAKE_TEARS
+; Lapras
+	db 5,1,THUNDER
+	db 5,2,PSYCHIC_M
+	db 5,3,ICE_BEAM
+	db 5,4,SURF
+	db 0
+
+	db BRUNO,$1
+; Steelix
+	db 1,1,ROCK_SLIDE
+	db 1,2,SCREECH
+	db 1,4,DIG
+; Hitmonchan
+	db 2,4,DRAIN_PUNCH
+; Hitmonlee
+	db 3,1,POISON_JAB
+	db 3,2,DOUBLE_TEAM
+; Hitmontop
+	db 4,3,SUBMISSION
+; Machamp
+	db 5,3,STRENGTH
+	db 0
+
+	db BRUNO,$2
+; Steelix
+	db 1,1,EARTHQUAKE
+	db 1,2,STONE_EDGE
+	db 1,3,BODY_SLAM
+	db 1,4,ROCK_POLISH
+; Hitmonchan
+	db 2,1,VACUUM_WAVE
+	db 2,2,COUNTER
+	db 2,3,DRAIN_PUNCH
+	db 2,4,BULLET_PUNCH
+; Hitmonlee
+	db 3,1,MEGA_KICK
+	db 3,2,POISON_JAB
+	db 3,3,HI_JUMP_KICK
+	db 3,4,DOUBLE_TEAM
+; Hitmontop
+	db 4,1,DIG
+	db 4,2,QUICK_ATTACK
+	db 4,3,SUBMISSION
+	db 4,4,COUNTER
+; Machamp
+	db 5,1,CROSS_CHOP
+	db 5,2,EARTHQUAKE
+	db 5,3,ROCK_SLIDE
+	db 5,4,FIRE_BLAST
+	db 0
+
+	db AGATHA,$1
+IF DEF(_RED)
+; Banette
+	db 1,1,SUCKER_PUNCH
+	db 1,2,WILL_O_WISP
+	db 1,3,OMINOUS_WIND
+	db 1,4,SCREECH
+; Crobat
+	db 2,2,GIGA_DRAIN
+; Chandelure
+	db 5,1,NIGHT_SHADE
+	db 5,2,FIRE_SPIN
+	db 5,3,WILL_O_WISP
+	db 5,4,PSYCHIC_M
+ENDC
+IF DEF(_BLUE)
+; Crobat
+	db 2,2,GIGA_DRAIN
+; Lampent
+	db 3,1,FIRE_BLAST
+ENDC
+	db 0
+
+	db AGATHA,$2
+IF DEF(_RED)
+; Banette
+	db 1,1,SUCKER_PUNCH
+	db 1,2,WILL_O_WISP
+	db 1,3,OMINOUS_WIND
+	db 1,4,SCREECH
+; Crobat
+	db 2,1,AIR_SLASH
+	db 2,2,CONFUSE_RAY
+	db 2,3,HEAT_WAVE
+	db 2,4,GIGA_DRAIN
+; Haunter
+	db 3,1,THUNDERBOLT
+	db 3,2,SHADOW_PUNCH
+	db 3,3,PSYCHIC_M
+	db 3,4,HYPNOSIS
+; Spiritomb
+	db 4,1,AMNESIA
+	db 4,2,DARK_PULSE
+	db 4,3,SUCKER_PUNCH
+	db 4,4,PSYCHIC_M
+; Chandelure
+	db 5,1,FIRE_BLAST
+	db 5,2,PSYCHIC_M
+	db 5,3,OMINOUS_WIND
+	db 5,4,WILL_O_WISP
+ENDC
+IF DEF(_BLUE)
+; Golurk
+	db 1,1,EARTHQUAKE
+	db 1,2,SHADOW_PUNCH
+	db 1,3,ICE_BEAM
+	db 1,4,MEGA_PUNCH
+; Crobat
+	db 2,1,AIR_SLASH
+	db 2,2,CONFUSE_RAY
+	db 2,3,HEAT_WAVE
+	db 2,4,GIGA_DRAIN
+; Lampent
+	db 3,1,FIRE_BLAST
+	db 3,2,PSYCHIC_M
+	db 3,3,OMINOUS_WIND
+	db 3,4,WILL_O_WISP
+; Spiritomb
+	db 4,1,AMNESIA
+	db 4,2,DARK_PULSE
+	db 4,3,SUCKER_PUNCH
+	db 4,4,PSYCHIC_M
+; Gengar
+	db 5,1,THUNDERBOLT
+	db 5,2,SHADOW_PUNCH
+	db 5,3,PSYCHIC_M
+	db 5,4,HYPNOSIS
+ENDC
+	db 0
+
+	db LANCE,$1
+IF DEF(_RED)
+; Zweilous
+	db 2,1,OMINOUS_WIND
+	db 2,3,CRUNCH
+	db 2,4,HYPER_BEAM
+; Dragonair
+	db 3,1,WRAP
+	db 3,2,ICE_BEAM
+; Aerodactyl
+	db 4,1,IRON_HEAD
+	db 4,2,FLY
+; Flygon
+	db 5,1,HYPER_BEAM
+	db 5,2,SOLARBEAM
+	db 5,3,EARTHQUAKE
+	db 5,4,BUG_BUZZ
+; Hydreigon
+	db 6,1,FIRE_BLAST
+	db 6,2,DRAGON_RUSH
+	db 6,3,SURF
+	db 6,4,HYPER_BEAM
+ENDC
+IF DEF(_BLUE)
+; Dragonair
+	db 2,1,WRAP
+	db 2,2,ICE_BEAM
+; Zweilous
+	db 3,1,OMINOUS_WIND
+	db 3,3,CRUNCH
+	db 3,4,HYPER_BEAM
+; Tyrantrum
+	db 4,1,EARTHQUAKE
+	db 4,2,BODY_SLAM
+	db 4,3,HYPER_BEAM
+	db 4,4,ANCIENTPOWER
+; Flygon
+	db 5,1,HYPER_BEAM
+	db 5,2,SOLARBEAM
+	db 5,3,EARTHQUAKE
+	db 5,4,BUG_BUZZ
+; Dragonite
+	db 6,1,THUNDER
+	db 6,2,DRAGON_RUSH
+	db 6,3,ROOST
+	db 6,4,HYPER_BEAM
+ENDC
+	db 0
+
+	db LANCE,$2
+IF DEF(_RED)
+; Gyarados
+	db 1,1,HYDRO_PUMP
+	db 1,2,CRUNCH
+	db 1,3,HYPER_BEAM
+	db 1,4,FIRE_BLAST
+; Kingdra
+	db 2,1,SURF
+	db 2,2,ICE_BEAM
+	db 2,3,HYPER_BEAM
+	db 2,4,AGILITY
+; Dragonair
+	db 3,1,DRAGON_RUSH
+	db 3,2,ICE_BEAM
+	db 3,3,THUNDER_WAVE
+	db 3,4,WRAP
+; Aerodactyl
+	db 4,1,IRON_HEAD
+	db 4,2,FLY
+	db 4,3,ANCIENTPOWER
+	db 4,4,DOUBLE_EDGE
+; Flygon
+	db 5,1,HYPER_BEAM
+	db 5,2,SOLARBEAM
+	db 5,3,EARTHQUAKE
+	db 5,4,BUG_BUZZ
+; Hydreigon
+	db 6,1,FIRE_BLAST
+	db 6,2,DRAGON_RUSH
+	db 6,3,SURF
+	db 6,4,HYPER_BEAM
+ENDC
+IF DEF(_BLUE)
+; Gyarados
+	db 1,1,HYDRO_PUMP
+	db 1,2,CRUNCH
+	db 1,3,HYPER_BEAM
+	db 1,4,FIRE_BLAST
+; Kingdra
+	db 2,1,SURF
+	db 2,2,ICE_BEAM
+	db 2,3,HYPER_BEAM
+	db 2,4,AGILITY
+; Zweilous
+	db 3,1,OMINOUS_WIND
+	db 3,2,DRAGON_PULSE
+	db 3,3,CRUNCH
+	db 3,4,HYPER_BEAM
+; Tyrantrum
+	db 4,1,EARTHQUAKE
+	db 4,2,ROCK_SLIDE
+	db 4,3,BODY_SLAM
+	db 4,4,DOUBLE_EDGE
+; Flygon
+	db 5,1,HYPER_BEAM
+	db 5,2,SOLARBEAM
+	db 5,3,EARTHQUAKE
+	db 5,4,BUG_BUZZ
+; Dragonite
+	db 6,1,HURRICANE
+	db 6,2,DRAGON_RUSH
+	db 6,3,ROOST
+	db 6,4,HYPER_BEAM
+ENDC
+	db 0
+
+	db SONY2,$7 ; Silph Co. 7F (Squirtle)
+IF DEF(_RED)
+; Exeggutor
+	db 3,1,REFLECT
+	db 3,2,LEECH_SEED
+	db 3,3,EGG_BOMB
+	db 3,4,GIGA_DRAIN
+ENDC
+IF DEF(_BLUE)
+; Ninetales
+	db 2,1,QUICK_ATTACK
+	db 2,2,TAKE_DOWN
+	db 2,3,CONFUSE_RAY
+	db 2,4,FLAMETHROWER
+ENDC
+	db 0
+
+	db SONY2,$8 ; Silph Co. 7F (Bulbasaur)
+IF DEF(_RED)
+; Arcanine
+	db 3,1,BITE
+	db 3,2,HEAT_WAVE
+	db 3,3,AGILITY
+	db 3,4,TAKE_DOWN
+ENDC
+IF DEF(_BLUE)
+; Cloyster
+	db 2,2,SUPERSONIC
+	db 2,3,CLAMP
+	db 2,4,AURORA_BEAM
+ENDC
+	db 0
+
+	db SONY2,$A ; Route 22 Round 2 (Squirtle)
+IF DEF(_RED)
+; Exeggutor
+	db 4,1,REFLECT
+	db 4,2,LEECH_SEED
+	db 4,3,EGG_BOMB
+	db 4,4,WOOD_HAMMER
+ENDC
+IF DEF(_BLUE)
+; Ninetales
+	db 3,1,QUICK_ATTACK
+	db 3,2,DARK_PULSE
+	db 3,3,CONFUSE_RAY
+	db 3,4,FIRE_BLAST
+ENDC
+	db 0
+
+	db SONY2,$B ; Round 22 Round 2 (Bulbasaur)
+IF DEF(_RED)
+; Arcanine
+	db 4,1,CRUNCH
+	db 4,2,FIRE_BLAST
+	db 4,3,AGILITY
+	db 4,4,DOUBLE_EDGE
+ENDC
+IF DEF(_BLUE)
+; Cloyster
+	db 3,1,POISON_JAB
+	db 3,2,SUPERSONIC
+	db 3,3,CLAMP
+	db 3,4,ICE_SHARD
+ENDC
+	db 0
+
+	db SONY3,$1 ; Champion (Squirtle)
+IF DEF(_RED)
+; Pidgeot
+	db 1,1,HURRICANE
+	db 1,2,MIRROR_MOVE
+	db 1,3,ROOST
+	db 1,4,STEEL_WING
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Flygon
+	db 3,1,BOOMBURST
+	db 3,2,FISSURE
+	db 3,3,CRUNCH
+	db 3,4,HEAT_WAVE
+; Klinklang
+	db 4,1,SHIFT_GEAR
+	db 4,2,HYPER_BEAM
+	db 4,3,GEAR_GRIND
+	db 4,4,THUNDER
+; Exeggutor
+	db 5,1,PSYCHIC_M
+	db 5,2,LEECH_SEED
+	db 5,3,EGG_BOMB
+	db 5,4,WOOD_HAMMER
+; Blastoise
+	db 6,1,HYDRO_PUMP
+	db 6,2,BLIZZARD
+	db 6,3,FLASH_CANNON
+	db 6,4,BODY_SLAM
+ENDC
+IF DEF(_BLUE)
+; Pidgeot
+	db 1,1,HURRICANE
+	db 1,2,MIRROR_MOVE
+	db 1,3,ROOST
+	db 1,4,STEEL_WING
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Mamoswine
+	db 3,1,EARTHQUAKE
+	db 3,2,ICE_SHARD
+	db 3,3,ANCIENTPOWER
+	db 3,4,BLIZZARD
+; Ninetales
+	db 4,1,CONFUSE_RAY
+	db 4,2,FIRE_BLAST
+	db 4,3,DARK_PULSE
+	db 4,4,WILL_O_WISP
+; Magnezone
+	db 5,1,THUNDER_WAVE
+	db 5,2,THUNDERBOLT
+	db 5,3,FLASH_CANNON
+	db 5,4,BARRIER
+; Blastoise
+	db 6,1,HYDRO_PUMP
+	db 6,2,BLIZZARD
+	db 6,3,FLASH_CANNON
+	db 6,4,BODY_SLAM
+ENDC
+	db 0
+
+	db SONY3,$2 ; Champion (Bulbasaur)
+IF DEF(_RED)
+; Pidgeot
+	db 1,1,HURRICANE
+	db 1,2,MIRROR_MOVE
+	db 1,3,ROOST
+	db 1,4,STEEL_WING
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Rhyperior
+	db 3,1,ROCK_WRECKER
+	db 3,2,EARTHQUAKE
+	db 3,3,POISON_JAB
+	db 3,4,HORN_DRILL
+; Gyarados
+	db 4,1,HYPER_BEAM
+	db 4,2,HYDRO_PUMP
+	db 4,3,CRUNCH
+	db 4,4,THUNDERBOLT
+; Arcanine
+	db 5,1,EXTREMESPEED
+	db 5,2,FIRE_BLAST
+	db 5,3,CRUNCH
+	db 5,4,DOUBLE_EDGE
+; Venusaur
+	db 6,1,LEECH_SEED
+	db 6,2,SLEEP_POWDER
+	db 6,3,SOLARBEAM
+	db 6,4,BODY_SLAM
+ENDC
+IF DEF(_BLUE)
+; Pidgeot
+	db 1,1,HURRICANE
+	db 1,2,MIRROR_MOVE
+	db 1,3,ROOST
+	db 1,4,STEEL_WING
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Excadrill
+	db 3,1,DRILL_RUN
+	db 3,2,SLASH
+	db 3,3,X_SCISSOR
+	db 3,4,FISSURE
+; Cloyster
+	db 4,1,SPIKE_CANNON
+	db 4,2,HYDRO_PUMP
+	db 4,3,ICE_SHARD
+	db 4,4,POISON_JAB
+; Chandelure
+	db 5,1,FIRE_BLAST
+	db 5,2,WILL_O_WISP
+	db 5,3,PSYCHIC_M
+	db 5,4,OMINOUS_WIND
+; Venusaur
+	db 6,1,LEECH_SEED
+	db 6,2,SLEEP_POWDER
+	db 6,3,SOLARBEAM
+	db 6,4,BODY_SLAM
+ENDC
+	db 0
+
+	db SONY3,$3 ; Champion (Charmander)
+IF DEF(_RED)
+; Pidgeot
+	db 1,1,HURRICANE
+	db 1,2,MIRROR_MOVE
+	db 1,3,ROOST
+	db 1,4,STEEL_WING
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Donphan
+	db 3,1,EARTHQUAKE
+	db 3,2,ROCK_SLIDE
+	db 3,3,POISON_JAB
+	db 3,4,BODY_SLAM
+; Mienshao
+	db 4,1,HI_JUMP_KICK
+	db 4,2,MEDITATE
+	db 4,3,DRAIN_PUNCH
+	db 4,4,MIMIC
+; Gengar
+	db 5,1,HYPNOSIS
+	db 5,2,SHADOW_PUNCH
+	db 5,3,PSYCHIC_M
+	db 5,4,THUNDERBOLT
+; Charizard
+	db 6,1,FIRE_BLAST
+	db 6,2,AIR_SLASH
+	db 6,3,OMINOUS_WIND
+	db 6,4,SLASH
+ENDC
+IF DEF(_BLUE)
+; Pidgeot
+	db 1,1,HURRICANE
+	db 1,2,MIRROR_MOVE
+	db 1,3,ROOST
+	db 1,4,STEEL_WING
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Sandslash
+	db 3,1,SAND_TOMB
+	db 3,2,X_SCISSOR
+	db 3,3,POISON_JAB
+	db 3,4,SLASH
+; Tentacruel
+	db 4,1,SLUDGE_WAVE
+	db 4,2,HYDRO_PUMP
+	db 4,3,SUPERSONIC
+	db 4,4,BARRIER
+; Scizor
+	db 5,1,BULLET_PUNCH
+	db 5,2,NIGHT_SLASH
+	db 5,3,SLASH
+	db 5,4,AGILITY
+; Charizard
+	db 6,1,FIRE_BLAST
+	db 6,2,AIR_SLASH
+	db 6,3,OMINOUS_WIND
+	db 6,4,SLASH
+ENDC
+	db 0
+
+	db SONY3,$4 ; Champion Rematch (Squirtle)
+IF DEF(_RED)
+; Heracross
+	db 1,1,MEGAHORN
+	db 1,2,EARTHQUAKE
+	db 1,3,SUBMISSION
+	db 1,4,COUNTER
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Flygon
+	db 3,1,BOOMBURST
+	db 3,2,FISSURE
+	db 3,3,CRUNCH
+	db 3,4,HEAT_WAVE
+; Klinklang
+	db 4,1,SHIFT_GEAR
+	db 4,2,HYPER_BEAM
+	db 4,3,GEAR_GRIND
+	db 4,4,THUNDER
+; Exeggutor
+	db 5,1,PSYCHIC_M
+	db 5,2,LEECH_SEED
+	db 5,3,REFLECT
+	db 5,4,WOOD_HAMMER
+; Blastoise
+	db 6,1,HYDRO_PUMP
+	db 6,2,BLIZZARD
+	db 6,3,FLASH_CANNON
+	db 6,4,BODY_SLAM
+ENDC
+IF DEF(_BLUE)
+; Heracross
+	db 1,1,MEGAHORN
+	db 1,2,EARTHQUAKE
+	db 1,3,SUBMISSION
+	db 1,4,COUNTER
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Mamoswine
+	db 3,1,EARTHQUAKE
+	db 3,2,ICE_SHARD
+	db 3,3,ROCK_SLIDE
+	db 3,4,BLIZZARD
+; Ninetales
+	db 4,1,AMNESIA
+	db 4,2,FIRE_BLAST
+	db 4,3,DARK_PULSE
+	db 4,4,WILL_O_WISP
+; Magnezone
+	db 5,1,THUNDER_WAVE
+	db 5,2,THUNDERBOLT
+	db 5,3,FLASH_CANNON
+	db 5,4,BARRIER
+; Blastoise
+	db 6,1,HYDRO_PUMP
+	db 6,2,BLIZZARD
+	db 6,3,FLASH_CANNON
+	db 6,4,BODY_SLAM
+ENDC
+	db 0
+
+	db SONY3,$5 ; Champion Rematch (Bulbasaur)
+IF DEF(_RED)
+; Heracross
+	db 1,1,MEGAHORN
+	db 1,2,EARTHQUAKE
+	db 1,3,SUBMISSION
+	db 1,4,COUNTER
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Rhyperior
+	db 3,1,ROCK_WRECKER
+	db 3,2,EARTHQUAKE
+	db 3,3,POISON_JAB
+	db 3,4,HORN_DRILL
+; Gyarados
+	db 4,1,HYPER_BEAM
+	db 4,2,HYDRO_PUMP
+	db 4,3,CRUNCH
+	db 4,4,THUNDERBOLT
+; Arcanine
+	db 5,1,EXTREMESPEED
+	db 5,2,FIRE_BLAST
+	db 5,3,CRUNCH
+	db 5,4,DOUBLE_EDGE
+; Venusaur
+	db 6,1,LEECH_SEED
+	db 6,2,SLEEP_POWDER
+	db 6,3,RAZOR_LEAF
+	db 6,4,BODY_SLAM
+ENDC
+IF DEF(_BLUE)
+; Heracross
+	db 1,1,MEGAHORN
+	db 1,2,EARTHQUAKE
+	db 1,3,SUBMISSION
+	db 1,4,COUNTER
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Excadrill
+	db 3,1,DRILL_RUN
+	db 3,2,SLASH
+	db 3,3,X_SCISSOR
+	db 3,4,FISSURE
+; Cloyster
+	db 4,1,SPIKE_CANNON
+	db 4,2,HYDRO_PUMP
+	db 4,3,ICE_SHARD
+	db 4,4,POISON_JAB
+; Chandelure
+	db 5,1,FIRE_BLAST
+	db 5,2,WILL_O_WISP
+	db 5,3,PSYCHIC_M
+	db 5,4,OMINOUS_WIND
+; Venusaur
+	db 6,1,LEECH_SEED
+	db 6,2,SLEEP_POWDER
+	db 6,3,RAZOR_LEAF
+	db 6,4,BODY_SLAM
+ENDC
+	db 0
+
+	db SONY3,$6 ; Champion Rematch (Charmander)
+IF DEF(_RED)
+; Heracross
+	db 1,1,MEGAHORN
+	db 1,2,EARTHQUAKE
+	db 1,3,SUBMISSION
+	db 1,4,COUNTER
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Donphan
+	db 3,1,EARTHQUAKE
+	db 3,2,ROCK_SLIDE
+	db 3,3,POISON_JAB
+	db 3,4,BODY_SLAM
+; Mienshao
+	db 4,1,HI_JUMP_KICK
+	db 4,2,MEDITATE
+	db 4,3,DRAIN_PUNCH
+	db 4,4,MIMIC
+; Gengar
+	db 5,1,HYPNOSIS
+	db 5,2,SHADOW_PUNCH
+	db 5,3,PSYCHIC_M
+	db 5,4,THUNDERBOLT
+; Charizard
+	db 6,1,FIRE_BLAST
+	db 6,2,AIR_SLASH
+	db 6,3,OMINOUS_WIND
+	db 6,4,SLASH
+ENDC
+IF DEF(_BLUE)
+; Heracross
+	db 1,1,MEGAHORN
+	db 1,2,EARTHQUAKE
+	db 1,3,SUBMISSION
+	db 1,4,COUNTER
+; Alakazam
+	db 2,1,RECOVER
+	db 2,2,REFLECT
+	db 2,3,PSYCHO_CUT
+	db 2,4,DAZZLINGLEAM
+; Sandslash
+	db 3,1,SAND_TOMB
+	db 3,2,X_SCISSOR
+	db 3,3,POISON_JAB
+	db 3,4,SLASH
+; Tentacruel
+	db 4,1,SLUDGE_WAVE
+	db 4,2,HYDRO_PUMP
+	db 4,3,SUPERSONIC
+	db 4,4,BARRIER
+; Scizor
+	db 5,1,BULLET_PUNCH
+	db 5,2,NIGHT_SLASH
+	db 5,3,SLASH
+	db 5,4,AGILITY
+; Charizard
+	db 6,1,FIRE_BLAST
+	db 6,2,AIR_SLASH
+	db 6,3,OMINOUS_WIND
+	db 6,4,SLASH
+ENDC
+	db 0
+
+	db PROF_OAK,$1 ; Final Boss (Bulbasaur)
+; Tauros
+	db 1,1,BODY_SLAM
+	db 1,2,EARTHQUAKE
+	db 1,3,BLIZZARD
+	db 1,4,DOUBLE_EDGE
+; Steelix
+	db 2,1,EARTHQUAKE
+	db 2,2,STONE_EDGE
+	db 2,3,ROCK_POLISH
+	db 2,4,BODY_SLAM
+; Hypno
+	db 3,1,AMNESIA
+	db 3,2,PSYCHIC_M
+	db 3,3,THUNDER_WAVE
+	db 3,4,DAZZLINGLEAM
+; Magmortar
+	db 4,1,THUNDERBOLT
+	db 4,2,FIRE_BLAST
+	db 4,3,PSYCHIC_M
+	db 4,4,EARTHQUAKE
+; Dragonite
+	db 5,1,HURRICANE
+	db 5,2,DRAGON_RUSH
+	db 5,3,ROOST
+	db 5,4,BLIZZARD
+; Venusaur
+	db 6,1,SLEEP_POWDER
+	db 6,2,RAZOR_LEAF
+	db 6,3,SWORDS_DANCE
+	db 6,4,BODY_SLAM
+	db 0
+
+	db PROF_OAK,$2 ; Final Boss (Charmander)
+; Tauros
+	db 1,1,BODY_SLAM
+	db 1,2,EARTHQUAKE
+	db 1,3,BLIZZARD
+	db 1,4,DOUBLE_EDGE
+; Magnezone
+	db 2,1,THUNDER_WAVE
+	db 2,2,THUNDERBOLT
+	db 2,3,FLASH_CANNON
+	db 2,4,METAL_SOUND
+; Slowking
+	db 3,1,AMNESIA
+	db 3,2,THUNDER_WAVE
+	db 3,3,SURF
+	db 3,4,PSYCHIC_M
+; Spiritomb
+	db 4,1,OMINOUS_WIND
+	db 4,2,AMNESIA
+	db 4,3,PSYCHIC_M
+	db 4,4,DARK_PULSE
+; Dragonite
+	db 5,1,HURRICANE
+	db 5,2,DRAGON_RUSH
+	db 5,3,ROOST
+	db 5,4,BLIZZARD
+; Charizard
+	db 6,1,FIRE_BLAST
+	db 6,2,SWORDS_DANCE
+	db 6,3,EARTHQUAKE
+	db 6,4,BODY_SLAM
+	db 0
+
+	db PROF_OAK,$3 ; Final Boss (Squirtle)
+; Tauros
+	db 1,1,BODY_SLAM
+	db 1,2,EARTHQUAKE
+	db 1,3,BLIZZARD
+	db 1,4,DOUBLE_EDGE
+; Excadrill
+	db 2,1,DRILL_RUN
+	db 2,2,SLASH
+	db 2,3,ROCK_SLIDE
+	db 2,4,X_SCISSOR
+; Poliwrath
+	db 3,1,HYDRO_PUMP
+	db 3,2,SUBMISSION
+	db 3,3,POISON_JAB
+	db 3,4,HYPNOSIS
+; Electivire
+	db 4,1,THUNDERBOLT
+	db 4,2,FIRE_PUNCH
+	db 4,3,EARTHQUAKE
+	db 4,4,ROCK_SLIDE
+; Dragonite
+	db 5,1,HURRICANE
+	db 5,2,DRAGON_RUSH
+	db 5,3,ROOST
+	db 5,4,BLIZZARD
+; Blastoise
+	db 6,1,BLIZZARD
+	db 6,2,EARTHQUAKE
+	db 6,3,HYDRO_PUMP
+	db 6,4,DARK_PULSE
+	db 0
+
+	db $ff
+ENDC

@@ -1,0 +1,30 @@
+Route17Mons:
+	db $19
+
+	IF DEF(_RED)
+		db 20,SPEAROW
+		db 22,PONYTA
+		db 25,NUMEL
+		db 24,DODUO
+		db 27,DODUO
+		db 26,SHELLOS
+		db 28,MIENFOO
+		db 29,MIENFOO
+		db 25,MUNCHLAX
+		db 27,FEAROW
+	ENDC
+	IF DEF(_BLUE)
+		db 20,SPEAROW
+		db 22,PONYTA
+		db 25,PONYTA
+		db 24,DODUO
+		db 27,DODUO
+		db 26,DODUO
+		db 28,MIENFOO
+		db 29,MIENFOO
+		db 25,MUNCHLAX
+		db 27,FEAROW
+	ENDC
+
+	db $00
+

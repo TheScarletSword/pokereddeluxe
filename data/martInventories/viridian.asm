@@ -1,0 +1,4 @@
+; Viridian
+ViridianMartText6:: ; 2442 (0:2442)
+	db $FE,8,POKE_BALL,POTION,ANTIDOTE,PARLYZ_HEAL
+	db BURN_HEAL,TM_44,TM_35,TM_16,$FF

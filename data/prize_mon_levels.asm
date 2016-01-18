@@ -1,0 +1,19 @@
+PrizeMonLevelDictionary: ; 5298a (14:698a)
+IF DEF(_RED)
+	db DITTO,15
+	db ELEKID,15
+	db TYROGUE,5
+
+	db DRATINI,20
+	db EEVEE,5
+	db PORYGON,22
+ENDC
+IF DEF(_BLUE)
+	db DITTO,15
+	db MAGBY,15
+	db TYROGUE,5
+
+	db DEINO,20
+	db EEVEE,5
+	db PORYGON,22
+ENDC

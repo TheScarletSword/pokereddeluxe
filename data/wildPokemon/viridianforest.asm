@@ -1,0 +1,29 @@
+ForestMons:
+	db $08
+	IF DEF(_RED)
+		db 4,WEEDLE
+		db 5,KAKUNA
+		db 3,WEEDLE
+		db 5,WEEDLE
+		db 4,KAKUNA
+		db 4,JOLTIK
+		db 5,PICHU
+		db 3,CATERPIE
+		db 3,PIKACHU
+		db 5,SHROOMISH
+	ENDC
+
+	IF DEF(_BLUE)
+		db 4,CATERPIE
+		db 5,METAPOD
+		db 3,CATERPIE
+		db 5,CATERPIE
+		db 4,METAPOD
+		db 4,JOLTIK
+		db 5,SHROOMISH
+		db 3,WEEDLE
+		db 3,PICHU
+		db 5,PIKACHU
+	ENDC
+
+	db $00

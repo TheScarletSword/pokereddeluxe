@@ -1,0 +1,28 @@
+MoonMons1:
+	db $0A
+	IF DEF(_RED)
+		db 8,ZUBAT
+		db 7,ZUBAT
+		db 9,ZUBAT
+		db 8,ROGGENROLA
+		db 6,ZUBAT
+		db 10,ZUBAT
+		db 10,ROGGENROLA
+		db 8,ROGGENROLA
+		db 8,CLEFFA
+		db 10,GEODUDE
+	ENDC
+	IF DEF(_BLUE)
+		db 8,ZUBAT
+		db 7,ZUBAT
+		db 9,ZUBAT
+		db 8,GEODUDE
+		db 6,ZUBAT
+		db 10,ZUBAT
+		db 10,GEODUDE
+		db 8,GEODUDE
+		db 8,CLEFFA
+		db 10,ROGGENROLA
+	ENDC
+	db $00
+

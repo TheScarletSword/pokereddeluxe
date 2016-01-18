@@ -1,0 +1,31 @@
+Route13Mons:
+	IF DEF(_RED)
+		db $14
+		db 24,ODDISH
+		db 25,PIDGEY
+		db 27,PIDGEY
+		db 24,VENONAT
+		db 22,ODDISH
+		db 26,VENONAT
+		db 26,FARFETCH_D
+		db 25,HAPPINY
+		db 28,GLOOM
+		db 30,GLOOM
+		db $00
+	ENDC
+
+	IF DEF(_BLUE)
+		db $14
+		db 24,BELLSPROUT
+		db 25,PIDGEY
+		db 27,PIDGEY
+		db 24,VENONAT
+		db 22,BELLSPROUT
+		db 26,VENONAT
+		db 26,FARFETCH_D
+		db 25,HAPPINY
+		db 28,WEEPINBELL
+		db 30,WEEPINBELL
+		db $00
+	ENDC
+

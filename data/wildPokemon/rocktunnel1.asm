@@ -1,0 +1,30 @@
+TunnelMonsB1:
+	db $0F
+
+	IF DEF(_RED)
+		db 16,ZUBAT
+		db 17,ZUBAT
+		db 17,ROGGENROLA
+		db 15,MACHOP
+		db 16,ROGGENROLA
+		db 18,ZUBAT
+		db 15,ZUBAT
+		db 17,MACHOP
+		db 13,ONIX
+		db 15,ONIX
+	ENDC
+	IF DEF(_BLUE)
+		db 16,ZUBAT
+		db 17,ZUBAT
+		db 17,GEODUDE
+		db 15,MACHOP
+		db 16,GEODUDE
+		db 18,ZUBAT
+		db 15,ZUBAT
+		db 17,MACHOP
+		db 13,ONIX
+		db 15,ONIX
+	ENDC
+
+	db $00
+

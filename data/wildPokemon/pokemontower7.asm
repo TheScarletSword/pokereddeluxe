@@ -1,0 +1,30 @@
+TowerMons7:
+	db $0F
+
+	IF DEF(_RED)
+		db 21,GASTLY
+		db 22,GASTLY
+		db 23,GASTLY
+		db 24,GASTLY
+		db 20,GASTLY
+		db 28,CUBONE
+		db 22,CUBONE
+		db 24,SHUPPET
+		db 28,SHUPPET
+		db 30,GOLETT
+	ENDC
+	IF DEF(_BLUE)
+		db 21,LITWICK
+		db 22,LITWICK
+		db 23,LITWICK
+		db 24,LITWICK
+		db 20,LITWICK
+		db 28,CUBONE
+		db 22,CUBONE
+		db 24,GOLETT
+		db 28,GOLETT
+		db 30,SHUPPET
+	ENDC
+
+	db $00
+

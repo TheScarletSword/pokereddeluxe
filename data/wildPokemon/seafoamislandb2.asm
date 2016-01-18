@@ -1,0 +1,30 @@
+IslandMonsB2:
+	db $0A
+	IF DEF(_RED)
+		db 30,SEEL
+		db 30,SLOWPOKE
+		db 32,SEEL
+		db 32,SLOWPOKE
+		db 28,SNOVER
+		db 30,SHELLDER
+		db 30,SNOVER
+		db 28,SWINUB
+		db 30,GOLBAT
+		db 35,CRYOGONAL
+	ENDC
+
+	IF DEF(_BLUE)
+		db 30,SEEL
+		db 30,PSYDUCK
+		db 32,SEEL
+		db 32,PSYDUCK
+		db 28,SNOVER
+		db 30,STARYU
+		db 30,SNOVER
+		db 28,SWINUB
+		db 30,GOLBAT
+		db 35,CRYOGONAL
+	ENDC
+
+	db $00
+

@@ -1,0 +1,31 @@
+Route9Mons:
+	db $0F
+
+	IF DEF(_RED)
+		db 16,RATTATA
+		db 16,SPEAROW
+		db 14,RATTATA
+		db 11,EKANS
+		db 15,PHANPY
+		db 15,EKANS
+		db 17,RATTATA
+		db 17,SPEAROW
+		db 13,SKARMORY
+		db 17,SKARMORY
+	ENDC
+
+	IF DEF(_BLUE)
+		db 16,RATTATA
+		db 16,SPEAROW
+		db 14,RATTATA
+		db 11,SANDSHREW
+		db 15,PHANPY
+		db 15,SANDSHREW
+		db 17,RATTATA
+		db 17,SPEAROW
+		db 13,SKARMORY
+		db 17,SKARMORY
+	ENDC
+
+	db $00
+

@@ -1,0 +1,30 @@
+MansionMons1:
+	db $0A
+	IF DEF(_RED)
+		db 32,KOFFING
+		db 30,KOFFING
+		db 34,RATICATE
+		db 30,RATTATA
+		db 34,GROWLITHE
+		db 32,RATTATA
+		db 30,RATICATE
+		db 28,RATTATA
+		db 37,WEEZING
+		db 30,GRIMER
+	ENDC
+
+	IF DEF(_BLUE)
+		db 32,GRIMER
+		db 30,GRIMER
+		db 34,RATICATE
+		db 30,RATTATA
+		db 34,VULPIX
+		db 32,RATTATA
+		db 10,MAGBY
+		db 28,RATTATA
+		db 37,MUK
+		db 30,KOFFING
+	ENDC
+
+	db $00
+

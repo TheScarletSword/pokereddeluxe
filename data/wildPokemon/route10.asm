@@ -1,0 +1,31 @@
+Route10Mons:
+	db $0F
+
+	IF DEF(_RED)
+		db 16,VOLTORB
+		db 17,PHANPY
+		db 14,VOLTORB
+		db 11,EKANS
+		db 13,SPEAROW
+		db 15,SPEAROW
+		db 17,SPEAROW
+		db 17,SPEAROW
+		db 13,EKANS
+		db 17,EKANS
+	ENDC
+
+	IF DEF(_BLUE)
+		db 16,VOLTORB
+		db 17,PHANPY
+		db 14,VOLTORB
+		db 11,SANDSHREW
+		db 13,SPEAROW
+		db 15,SHELLOS
+		db 17,SHELLOS
+		db 17,SPEAROW
+		db 13,SANDSHREW
+		db 17,SANDSHREW
+	ENDC
+
+	db $00
+
