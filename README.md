@@ -19,7 +19,7 @@ See sprite credits and etc. in the pokecommunity thread or somethin'.
 
 ## See also
 
-(btw, the following places are the only places this hack should be popping up at. if this is not the case, contact TheScarletSword.)
+(btw, the following places are the only places this hack should be popping up at - if you post it elsewhere, include this github and one of the links below. if this is not the case, contact TheScarletSword.)
 
 * [**pokecommunity thread**][pokecommunity]
 * [**pokemon reborn thread**][reborn]
