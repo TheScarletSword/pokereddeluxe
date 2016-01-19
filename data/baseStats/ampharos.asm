@@ -21,7 +21,7 @@ db TACKLE
 db GROWL
 db 0
 db 0
-db 5 ; growth rate
+db 3 ; growth rate
 ; learnset
 db %10110001
 db %01000011
