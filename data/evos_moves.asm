@@ -435,9 +435,9 @@ Mon101_EvosMoves: ; 3b7d3 (e:77d3)
 Mon079_EvosMoves: ; 3b3ad (e:73ad)
 ;SLOWPOKE
 ;Evolutions
-	db EV_LEVEL,37,SLOWBRO
 	db EV_TRADE,1,SLOWKING
 	db EV_ITEM,LINK_STONE,1,SLOWKING
+	db EV_LEVEL,37,SLOWBRO
 	db 0
 ;Learnset
 	db 18,DISABLE
@@ -1734,8 +1734,8 @@ Mon060_EvosMoves: ; 3b523 (e:7523)
 Mon061_EvosMoves: ; 3b6cc (e:76cc)
 ;POLIWHIRL
 ;Evolutions
-	db EV_ITEM,WATER_STONE,1,POLIWRATH
 	db EV_TRADE,1,POLITOED
+	db EV_ITEM,WATER_STONE,1,POLIWRATH
 	db EV_ITEM,LINK_STONE,1,POLITOED
 	db 0
 ;Learnset
