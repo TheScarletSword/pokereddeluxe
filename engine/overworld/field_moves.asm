@@ -29,6 +29,7 @@ TrySurf:
 
 	
 ; Are we allowed to surf here?
+	call Text2_EnterTheText
 	callba CheckForForcedBikeSurf ; in current Pokered, this is callba IsSurfingAllowed
 	ld hl,wd728
 	bit 1,[hl]
