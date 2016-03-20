@@ -1410,7 +1410,8 @@ HandlePlayerBlackOut: ; 3c837 (f:4837)
 	cp OAKS_LAB
 	ret z            ; starter battle in oak's lab: don't black out
 .notSony1Battle
-	ld b, $0
+	ld b, $0B
+	ld c, 1
 	call GoPAL_SET
 	ld a, [W_INCHALLENGE]
 	ld hl, PlayerBlackedOutText2

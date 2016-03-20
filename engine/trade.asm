@@ -172,6 +172,9 @@ Func_4123b: ; 4123b (10:523b)
 	ret
 
 Func_41245: ; 41245 (10:5245)
+	ld b, $0B
+ 	ld c, 2
+ 	call RunPaletteCommand
 	ld a, $ab
 	ld [rLCDC], a ; $ff40
 	ld a, $50
@@ -214,10 +217,13 @@ Func_41245: ; 41245 (10:5245)
 	ret
 
 Func_41298: ; 41298 (10:5298)
+	ld a, %11110000
+	ld [rOBP0], a
 	call Func_41196
 	ld b, $98
 	call CopyScreenTileBufferToVRAM
-	ld b, $8
+	ld b, $0B
+	ld c, 2
 	call GoPAL_SET
 	ld hl, vBGMap1 + $8c
 	call Func_414ae
@@ -324,7 +330,7 @@ Func_41376: ; 41376 (10:5376)
 	call Func_41411
 	ld a, $1
 	ld [wd08a], a
-	ld a, $e4
+	ld a, %11010000
 	ld [rOBP0], a ; $ff48
 	ld a, $54
 	ld [W_BASECOORDX], a ; wd081

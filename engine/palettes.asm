@@ -95,7 +95,7 @@ DeterminePaletteIDOutOfBattle: ; 71f9d (1c:5f9d)
 	bit 4, a ; is mon supposed to be shiny?
 	ld a, b
 	jr z, .done
-	add $54
+	add $78
 .done
 	pop bc
 	ret
@@ -150,7 +150,7 @@ DetermineBackSpritePaletteID_NoStatusCheck: ; 71f9d (1c:5f9d)
 	bit 4, a ; is mon supposed to be shiny?
 	ld a, b
 	jr z, .done
-	add $54
+	add $78
 .done
 	pop bc
 	ret

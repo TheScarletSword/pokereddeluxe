@@ -4630,6 +4630,7 @@ GBPalWhiteOut::
 GoPAL_SET_CF1C:: ; 3ded (0:3ded)
 	ld b,$ff
 GoPAL_SET:: ; 3def (0:3def)
+RunPaletteCommand::
 	ld a,[wOnSGB]
 	and a
 	ret z

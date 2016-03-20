@@ -4781,7 +4781,7 @@ UpdateHPBar_Palettes:
 .inMenu
 	ld hl, W2_TilesetPaletteMap
 	ld bc, 20*2 ; 2 rows for each pokemon in the menu
-	ld a, [wCurrentMenuItem]
+	ld a, [wLastMenuItem]
 	call AddNTimes
 	ld bc, 20*2
 	ld a, [wcf1d] ; Palette # was stored to here
@@ -6508,9 +6508,11 @@ AnimateEXPBar:
 	ld hl, CalcEXPBarPixelLength
 	ld b, BANK(CalcEXPBarPixelLength)
 	call Bankswitch
-	ld a, [wEXPBarPixelLength]
+	ld hl, wEXPBarPixelLength
+	ld a, [hl]
 	ld b, a
 	ld a, [H_QUOTIENT + 3]
+	ld [hl], a
 	sub b
 	jr z, .done
 	ld b, a

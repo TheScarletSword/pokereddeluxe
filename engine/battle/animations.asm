@@ -342,10 +342,16 @@ LoadAnimationTileset: ; 781d2 (1e:41d2)
 	add a
 	ld e,a
 	ld d,0
+	ld a, [W_ISINBATTLE]
+ 	and a
+ 	jr z, .inTrade ; don't load attack sprite palettes during trades
 	; HAX: Load corresponding palettes as well
 	ld b, BANK(LoadAnimationTilesetPalettes)
 	ld hl, LoadAnimationTilesetPalettes
 	rst $18
+.inTrade
+ 	ld hl,AnimationTilesetPointers
+ 	add hl,de
 	ld a,[hli]
 	ld [wd07d],a ; number of tiles
 	push af
