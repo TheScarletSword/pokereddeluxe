@@ -226,6 +226,7 @@ charmap "'l", $BC
 charmap "'s", $BD
 charmap "'t", $BE
 charmap "'v", $BF
+charmap "[SHINY]",$DF
 charmap "'", $E0
 charmap "-", $E3
 charmap "'r", $E4
