@@ -478,8 +478,8 @@ _GolettDexEntry::
 
 _GolurkDexEntry::
 	text "GOLURK were crea-"
-	next "ted to protct peo-"
-	next "ple and #MON."
+	next "ted to protect pe-"
+	next "ople and #MON."
 
 	page "They run on a"
 	next "mysterious energy"

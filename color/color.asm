@@ -299,7 +299,7 @@ BuildStatusScreenPalPacket:
 ; Show pokedex data
 SendPalPacket_Pokedex:
 	ld a, [wcf91]
-	call DeterminePaletteIDOutOfBattle	; Call DeterminePaletteID without status or shiny check
+	call DeterminePaletteIDNoShinyCheck	; Call DeterminePaletteID without status or shiny check
 	ld d,a
 	ld e,0
 
