@@ -13,7 +13,7 @@ To set up the repository, see [**INSTALL.md**](INSTALL.md).
 * Mateo - Running Shoes, Field Moves (additional credit to Yenatch), Ingame trade name OTs: https://github.com/TheFakeMateo/RedPlusPlus
 * ShantyTown - Battle Factory (modified), Shiny Pokemon (modified), max DV/shiny ball idea, lucky egg/amulet coin code (modified): https://github.com/huderlem/pokered_battle_factory
 * dabomstew (+ luckytyphlosion) - stronger AI (modified): https://github.com/luckytyphlosion/pokered-challenge
-* Pigu-A, etc. - Battle Tent [modified], female trainer sprites, leader reamtches, oak: https://github.com/TwitchPlaysPokemon/pokemonAnniversaryRed
+* Pigu-A, etc. - Battle Tent [modified], female trainer sprites, leader rematches, oak: https://github.com/TwitchPlaysPokemon/pokemonAnniversaryRed
 
 See sprite credits and etc. in the pokecommunity thread or somethin'.
 
