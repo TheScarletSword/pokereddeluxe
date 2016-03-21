@@ -353,7 +353,7 @@ endr
 	move DRAIN_PUNCH,  DRAIN_HP_EFFECT,                     60, FIGHTING,   100, 5
 	move VACUUM_WAVE,  NO_ADDITIONAL_EFFECT,                40, FIGHTING,   100, 30
 	move DRAGON_PULSE, NO_ADDITIONAL_EFFECT,                90, DRAGON,     100, 10
-	move SUCKER_PUNCH, NO_ADDITIONAL_EFFECT,                80, DARK,       100, 5
+	move SUCKER_PUNCH, SUCKER_PUNCH_EFFECT,                 80, DARK,       100, 5
 	move MOONLIGHT,    HEAL_EFFECT,                         0,  FAIRY,      100, 5
 	move VOLT_TACKLE,  RECOIL_EFFECT,                       120, ELECTRIC,  100, 15
 	move ICE_SHARD,    NO_ADDITIONAL_EFFECT,                40, ICE,        100, 30

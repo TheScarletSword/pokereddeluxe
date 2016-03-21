@@ -539,6 +539,7 @@ MainInBattleLoop: ; 3c233 (f:4233)
 .enemyMovesFirst
 	ld a, $1
 	ld [H_WHOSETURN], a
+	ld [wEnemyWentFirst], a
 	callab TrainerAI
 	jr c, .AIActionUsedEnemyFirst
 	call ExecuteEnemyMove
@@ -565,6 +566,8 @@ MainInBattleLoop: ; 3c233 (f:4233)
 	call CheckNumAttacksLeft
 	jp MainInBattleLoop
 .playerMovesFirst
+	xor a
+	ld [wEnemyWentFirst], a
 	call ExecutePlayerMove
 	ld a, [wEscapedFromBattle]
 	and a ; was Teleport, Road, or Whirlwind used to escape from battle?
@@ -5502,25 +5505,33 @@ MoveHitTest: ; 3e56b (f:656b)
 .dreamEaterCheck
 	ld a,[de]
 	cp a,DREAM_EATER_EFFECT
-	jr nz,.swiftCheck
+	jr nz,.checkForDigOrFlyStatus
 	ld a,[bc]
 	and a,$07 ; is the target pokemon sleeping?
 	jp z,.moveMissed
+.checkForDigOrFlyStatus
+	bit 6,[hl]
+	jp nz,.moveMissed
+.suckerPunchCheck
+ 	ld a,[de]
+ 	cp a,SUCKER_PUNCH_EFFECT
+ 	jr nz,.swiftCheck
+ 	call SuckerPunchHitTest
+ 	jr c,.moveMissed
 .swiftCheck
 	ld a,[de]
 	cp a,SWIFT_EFFECT
 	ret z ; Swift never misses (interestingly, Azure Heights lists this is a myth, but it appears to be true)
 	call CheckTargetSubstitute ; substitute check (note that this overwrites a)
-	jr z,.checkForDigOrFlyStatus
-; this code is buggy. it's supposed to prevent HP draining moves from working on substitutes.
-; since $7b79 overwrites a with either $00 or $01, it never works.
+	jr z,.skipDrainChecks
+; this code should be fixed now
+    ld a,[de]
 	cp a,DRAIN_HP_EFFECT
 	jp z,.moveMissed
 	cp a,DREAM_EATER_EFFECT
 	jp z,.moveMissed
-.checkForDigOrFlyStatus
-	bit 6,[hl]
-	jp nz,.moveMissed
+; Move dig or fly status up a bit
+.skipDrainChecks
 	ld a,[H_WHOSETURN]
 	and a
 	jr nz,.enemyTurn
@@ -7377,6 +7388,7 @@ MoveEffectPointerTable: ; 3f150 (f:7150)
 	 dw StatModifierDownEffect100 ; SPEED_DOWN_SIDE_EFFECT_100
 	 dw StatModifierDownEffect100 ; SPECIAL_DOWN_SIDE_EFFECT_100
 	 dw FreezeBurnParalyzeEffect  ; PARALYZE_SIDE_EFFECT_100
+	 dw $0000                     ; SUCKER_PUNCH_EFFECT
 
 SleepEffect: ; 3f1fc (f:71fc)
 	ld de, wEnemyMonStatus
@@ -8895,3 +8907,105 @@ Func_3fbbc: ; 3fbbc (f:7bbc)
 	pop de
 	pop hl
 	ret
+
+SuckerPunchHitTest:
+; Sets carry flag if the move should miss. (Resets carry flag otherwise.)
+; Move fails if it didn't go first.
+	ld a, [H_WHOSETURN]
+	and a
+	ld a, [wEnemyWentFirst]
+	jr z, .playerTurn
+	and a
+	jr z, .moveMissed
+.playerTurn
+	and a
+	jr nz, .moveMissed
+.checkOpposingMove
+; Fails if the opponent is using a non-damaging move.
+	ld a, [H_WHOSETURN]
+	and a
+	jr z, .getEnemyMove
+	ld a, [wPlayerSelectedMove]
+	jr .checkIfDamagingMove
+.getEnemyMove
+	ld a, [wEnemySelectedMove]
+.checkIfDamagingMove
+	ld b, a
+	ld hl, NonDamagingMoves
+.nonDamageMoveLoop
+	ld a, [hli]
+	cp $ff  ; terminator
+	jr z, .moveHit
+	cp b
+	jr z, .moveMissed
+	jr .nonDamageMoveLoop
+.moveHit
+	and a  ; reset carry flag
+	ret
+.moveMissed
+	scf
+	ret
+
+NonDamagingMoves:
+; Used to determine if Sucker Punch will hit.
+; The list of non-damaging moves is much shorter than damaging moves, so we're saving precious space in this Bank.
+	db SWORDS_DANCE
+	db SAND_ATTACK
+	db TAIL_WHIP
+	db LEER
+	db GROWL
+	db ROAR
+	db SING
+	db SUPERSONIC
+	db DISABLE
+	db MIST
+	db LEECH_SEED
+	db GROWTH
+	db POISONPOWDER
+	db STUN_SPORE
+	db SLEEP_POWDER
+	db STRING_SHOT
+	db THUNDER_WAVE
+	db TOXIC
+	db HYPNOSIS
+	db MEDITATE
+	db AGILITY
+	db TELEPORT
+	db MIMIC
+	db SCREECH
+	db DOUBLE_TEAM
+	db RECOVER
+	db HARDEN
+	db MINIMIZE
+	db SMOKESCREEN
+	db CONFUSE_RAY
+	db WITHDRAW
+	db DEFENSE_CURL
+	db BARRIER
+	db LIGHT_SCREEN
+	db HAZE
+	db REFLECT
+	db METRONOME
+	db AMNESIA
+	db SOFTBOILED
+	db GLARE
+	db POISON_GAS
+	db LOVELY_KISS
+	db TRANSFORM
+	db SPORE
+	db FLASH
+	db SPLASH
+	db REST
+	db SHARPEN
+	db CONVERSION
+	db SUBSTITUTE
+	db COSMIC_POWER
+	db MOONLIGHT
+	db FAKE_TEARS
+	db ROCK_POLISH
+	db SHIFT_GEAR
+	db ROOST
+	db WILL_O_WISP
+	db METAL_SOUND
+	db SYNTHESIS
+	db $ff
