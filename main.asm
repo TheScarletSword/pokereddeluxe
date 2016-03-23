@@ -7954,6 +7954,7 @@ SECTION "bank3e",ROMX,BANK[$3e]
 
 BaseStats: INCLUDE "data/base_stats.asm"
 INCLUDE "engine/overworld/field_moves.asm"
+INCLUDE "engine/overworld/automatic_repel.asm"
 INCLUDE "data/mapHeaders/battlefactory.asm"
 INCLUDE "scripts/battlefactory.asm"
 INCLUDE "data/mapObjects/battlefactory.asm"
