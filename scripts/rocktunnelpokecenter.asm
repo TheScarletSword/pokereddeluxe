@@ -26,7 +26,7 @@ RockTunnelPokecenterText4: ; 493d3 (12:53d3)
 RockTunnelPokecenterText5: ; 49651 (12:5651)
 	db $8
 	ld a, [wRoamingFlag]
-	bit 3, a
+	bit 6, a
 	jr nz, .AmuletCoinExplain
 	ld a, 20 ; pokemon needed
 	ld [$ffdb], a
@@ -43,7 +43,7 @@ RockTunnelPokecenterText5: ; 49651 (12:5651)
 	cp $1
 	jr nz, .finish
 	ld hl, wRoamingFlag
-	set 3, [hl]
+	set 6, [hl]
 .AmuletCoinExplain
 	ld hl, RockTunnelPokecenterTextAmuletCoin
 	call PrintText

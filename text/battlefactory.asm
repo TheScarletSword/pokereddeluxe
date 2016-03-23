@@ -946,3 +946,35 @@ _CantLeaveText::
 	line "receptionist to"
 	cont "begin battling!"
 	done
+
+_BattleFactoryTextInverse::
+	text "Would you like to"
+	line "change your"
+	cont "INVERSE MODE"
+	cont "setting for this"
+	cont "this challenge?"
+	done
+
+_BattleFactoryTextInverseOn::
+	text "You have turned"
+	line "INVERSE MODE on."
+	
+	para "It will be turned"
+	line "off automatically"
+	cont "when your BATTLE"
+	cont "FACTORY challenge"
+	cont "is completed."
+	cont ""
+	done
+
+_BattleFactoryTextInverseOff::
+	text "You have turned"
+	line "INVERSE MODE off."
+
+	para "It will be turned"
+	line "on automatically"
+	cont "when your BATTLE"
+	cont "FACTORY challenge"
+	cont "is completed."
+	cont ""
+	done

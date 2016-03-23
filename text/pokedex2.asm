@@ -211,10 +211,10 @@ _ElekidDexEntry::
 _MagnezoneDexEntry::
 	text "It evolved from"
 	next "exposure to a"
-	next "strange magnetism."
+	next "special magnetic"
 
-	page "Three separate"
-	next "units generate its"
+	page "field. Three"
+	next "units generate"
 	next "magnetism"
 	dex
 	
@@ -303,13 +303,13 @@ _HitmontopDexEntry::
 	next "chanted by its"
 	next "smooth, elegant"
 
-	page "dannce-like kicks,"
+	page "dance-like kicks,"
 	next "you may get"
 	next "drilled hard"
 	dex
 
 _MimeJrDexEntry::
-	text "it habitually mim-"
+	text "It habitually mim-"
 	next "ics foes. Once"
 	next "mimicked, the foe"
 
@@ -388,7 +388,7 @@ _GigalithDexEntry::
 
 _DeinoDexEntry::
 	text "It tends to bite"
-	next "eerything, and is"
+	next "everything, and is"
 	next "not a picky eater."
 
 	page "Approaching it"

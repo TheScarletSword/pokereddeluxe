@@ -2138,7 +2138,15 @@ W_NUM_RENTED_MONS:: ; dee3
 	ds 1
 wRematchFlag::
 	ds 1
-wRoamingFlag:: ; also used for amulet coin, shiny charm and lucky egg, as well as Inverse Mode setting
+wRoamingFlag::
+; bit 0 - Escaped from a battle
+; bit 1 - Was Oak battled?
+; bit 2 - Did you obtain the Diploma?
+; bit 3 - Was the Inverse option toggled in the Battle Factory?
+; bit 4 - Was Lucky Egg obtained?
+; bit 5 - Is Inverse Mode enabled?
+; bit 6 - Was Amulet Coin obtained?
+; bit 7 - Metronome shenanigans
 	ds 1
 
 W_DAYCARE_IN_USE:: ; no longer in use

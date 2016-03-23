@@ -81,7 +81,7 @@ HallofFameRoomScript0: ; 5a50d (16:650d)
 	ld b, wPokedexOwnedEnd - wPokedexOwned
 	call CountSetBits
 	ld a, [wd11e]
-	cp 252
+	cp 254
 	jr c, .skip
 	rst IsOakable
 	jr nz, .skip

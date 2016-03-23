@@ -1117,6 +1117,7 @@ TrainerBattleVictory: ; 3c696 (f:4696)
 	ld hl, W_CURCLASS
 	push hl
 	inc [hl]
+	callba FactoryInverseCheck
 	ld hl, BeatSevenTrainersText
 	call PrintText
 	pop hl
@@ -1442,8 +1443,28 @@ HandlePlayerBlackOut: ; 3c837 (f:4837)
 	ld [W_STARTBATTLE], a
 	ld [W_INCHALLENGE], a
 	ld [W_CURCLASS], a
+	call FactoryInverseCheck
 .notBattleFactory
 	scf
+	ret
+
+FactoryInverseCheck:
+; checks if Inverse was enabled for the Factory. We don't want people changing Inverse permanently
+	ld a, [wRoamingFlag]
+	bit 3, a
+	jr z, .Finished
+	ld hl, wRoamingFlag
+	res 3, [hl]
+	ld a, [wRoamingFlag]
+	bit 5, a
+	jr nz, .FactoryInverseModeOff ; switches Inverse off if it's already set
+	ld hl, wRoamingFlag
+	set 5, [hl] ; Switches inverse on
+	jp .Finished
+.FactoryInverseModeOff
+	ld hl, wRoamingFlag
+	res 5, [hl] ; Switches Inverse off
+.Finished
 	ret
 
 Sony1WinText: ; 3c884 (f:4884)

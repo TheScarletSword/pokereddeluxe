@@ -20,7 +20,7 @@ SECTION "rst18", ROM0[$18]
 	jp Bankswitch
 IsOakable EQU $20
 SECTION "rst 20", ROM0 [IsOakable]
-; zero if red is fought and pokedex is completed and gym rematches are done
+; zero if pokedex is completed and gym rematches are done
 	ld a, [wRoamingFlag]
 	and OAKABLE
 	cp OAKABLE

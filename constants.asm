@@ -37,7 +37,7 @@ INCLUDE "constants/starter_mons.asm"
 INCLUDE "color/wram.asm"
 
 RANOCCURED     EQU 0
-OAKBATTLE      EQU 2
-DIPLOMASEEN    EQU 4
+OAKBATTLE      EQU 1
+DIPLOMASEEN    EQU 2
 
 OAKABLE EQU (1 << DIPLOMASEEN)

@@ -263,8 +263,6 @@ BattleFactoryText1: ; (17:656c)
 	call PrintText
 	jp TextScriptEnd
 .saidYes:
-	ld hl, BattleFactoryText3
-	call PrintText
 	ld a, [wPartyCount]
 	ld [W_FOSSILMON], a
 	call StoreMonsInPC
@@ -274,6 +272,16 @@ BattleFactoryText1: ; (17:656c)
 	call PrintText
 	jp TextScriptEnd
 .storedMonsInBox
+	ld hl, BattleFactoryTextInverse
+	call PrintText
+	call YesNoChoice
+	ld a, [$cc26]
+	and a
+	jr nz, .saidNo
+	call BattleFactoryTextE
+.saidNo
+	ld hl, BattleFactoryText3
+	call PrintText
 	call FillMonChoices
 	call SaveScreenTilesToBuffer2
 	xor a 
@@ -2570,3 +2578,33 @@ GetHeadID:
 	ret
 
 INCLUDE "data/martInventories/fossils.asm"
+
+BattleFactoryTextE:
+	ld hl, wRoamingFlag
+	set 3, [hl]
+	ld a, [wRoamingFlag]
+	bit 5, a
+	jr nz, .InverseModeOff ; switches Inverse off if it's already set
+	ld hl, BattleFactoryTextInverseOn
+	call PrintText
+	ld hl, wRoamingFlag
+	set 5, [hl] ; Switches inverse on (temporarily, as we're in the Battle Factory)
+	jp TextScriptEnd
+.InverseModeOff
+	ld hl, BattleFactoryTextInverseOff
+	call PrintText
+	ld hl, wRoamingFlag
+	res 5, [hl] ; Switches Inverse off (temporarily)
+	jp TextScriptEnd
+
+BattleFactoryTextInverse:
+	TX_FAR _BattleFactoryTextInverse
+	db "@"
+
+BattleFactoryTextInverseOn:
+	TX_FAR _BattleFactoryTextInverseOn
+	db "@"
+
+BattleFactoryTextInverseOff:
+	TX_FAR _BattleFactoryTextInverseOff
+	db "@"

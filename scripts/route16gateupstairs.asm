@@ -49,7 +49,7 @@ Route16GateUpstairsText_49847: ; 49847 (12:5847)
 Route16GateUpstairsText5: ; 49651 (12:5651)
 	db $8
 	ld a, [wRoamingFlag]
-	bit 1, a
+	bit 4, a
 	jr nz, .LuckyEggExplain
 	ld a, 40 ; pokemon needed
 	ld [$ffdb], a
@@ -66,7 +66,7 @@ Route16GateUpstairsText5: ; 49651 (12:5651)
 	cp $1
 	jr nz, .finish
 	ld hl, wRoamingFlag
-	set 1, [hl]
+	set 4, [hl]
 .LuckyEggExplain
 	ld hl, Route16GateUpstairsTextLuckyEgg
 	call PrintText
