@@ -4,6 +4,8 @@ This is a disassembly of Pokémon Red and Blue DX, a hack by TheScarletSword bas
 
 To set up the repository, see [**INSTALL.md**](INSTALL.md).
 
+To control what version you want to compile, check out the constants.asm file.
+
 ## Credits
 
 * Sanqui / Sanky - Porting of Crystal audio engine, instant text (rewritten), separation of trainer ids, porting of pinball music: https://github.com/sanqui/pokered-randomizer
