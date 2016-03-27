@@ -290,7 +290,7 @@ MapHS0A: ; cb08 (3:4b08)
 	db SAFFRON_CITY,$02,Show
 	db SAFFRON_CITY,$03,Show
 	db SAFFRON_CITY,$04,Show
-	db SAFFRON_CITY,$05,Show
+	db SAFFRON_CITY,$05,Hide
 	db SAFFRON_CITY,$06,Show
 	db SAFFRON_CITY,$07,Show
 	db SAFFRON_CITY,$08,Hide
@@ -299,8 +299,6 @@ MapHS0A: ; cb08 (3:4b08)
 	db SAFFRON_CITY,$0B,Hide
 	db SAFFRON_CITY,$0C,Hide
 	db SAFFRON_CITY,$0D,Hide
-	db SAFFRON_CITY,$0E,Show
-	db SAFFRON_CITY,$0F,Hide
 MapHS0D: ; cb35 (3:4b35)
 	db ROUTE_2,$01,Show
 	db ROUTE_2,$02,Show

@@ -225,10 +225,10 @@ PokemonTower7FujiText:
 	ld a, HS_LAVENDER_HOUSE_1_MR_FUJI
 	ld [wcc4d], a
 	predef ShowObject
-	ld a, HS_SAFFRON_CITY_E
+	ld a, HS_SAFFRON_CITY_2
 	ld [wcc4d], a
 	predef HideObject
-	ld a, HS_SAFFRON_CITY_F
+	ld a, HS_SAFFRON_CITY_5
 	ld [wcc4d], a
 	predef ShowObject
 	ld a, $4
