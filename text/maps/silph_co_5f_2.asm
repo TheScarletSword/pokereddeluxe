@@ -68,7 +68,7 @@ _SilphCo5Text11:: ; 84134 (21:4134)
 	cont "new type of STONE"
 	cont "that also evolves"
 	cont "those types of"
-	cont "#MON, called the"
-	cont "LINK STONE."
+	cont "#MON, called"
+	cont "the LINK STONE."
 	done
 
