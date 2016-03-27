@@ -5,7 +5,7 @@ Route16GateUpstairsObject: ; 0x4984c (size=30)
 	db $7, $7, $8, ROUTE_16_GATE_1F
 
 	db $2 ; signs
-	db $2, $1, $3 ; Route16GateUpstairsText3
+	db $2, $1, $4 ; Route16GateUpstairsText3
 	db $2, $6, $4 ; Route16GateUpstairsText4
 
 IF CHALLENGE_MODE_PLUS
