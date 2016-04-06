@@ -112,7 +112,7 @@ Func_39707: ; 39707 (e:5707)
 ; creates a set of moves that may be used and returns its address in hl
 ; unused slots are filled with 0, all used slots may be chosen with equal probability
 AIEnemyTrainerChooseMoves: ; 39719 (e:5719)
-	ld a, $14 ; changed to give us more breathing room
+	ld a, $20 ; changed to give us more breathing room
 	ld hl, wHPBarMaxHP  ; init temporary move selection array. Only the moves with the lowest numbers are chosen in the end
 	ld [hli], a   ; move 1
 	ld [hli], a   ; move 2
@@ -728,24 +728,33 @@ SmartAI:
     ld [hl], a
     jr .seloop
 .selfbuffcheck
-; 50% chance to encourage self-buff or status on turn 1/2
-    ld a, [wccd5]
-    cp $2
-    ret nc
-    call Random
-    ld a, [hRandomAdd]
-    cp $80
-    ret nc
-    ld hl, MehStatusMoves
-    ld b, -3
-    call AlterMovePriorityArray
-    ld hl, LightBuffStatusMoves
-    ld b, -5
-    call AlterMovePriorityArray
-    ld hl, HeavyBuffStatusMoves
-    ld b, -6
-    call AlterMovePriorityArray
-    ret
+ ; 50% chance to encourage self-buff or status on turn 1/2
+ 	ld a, [wccd5]
+ 	cp $2
+ 	jr nc, .discourageStatusOnly
+ 	call Random
+ 	ld a, [hRandomAdd]
+ 	cp $80
+ 	jr nc, .discourageStatusOnly
+ 	ld hl, MehStatusMoves
+ 	ld b, -3
+ 	call AlterMovePriorityArray
+ 	ld hl, LightBuffStatusMoves
+ 	ld b, -5
+ 	call AlterMovePriorityArray
+ 	ld hl, HeavyBuffStatusMoves
+ 	ld b, -6
+ 	call AlterMovePriorityArray
+.discourageStatusOnly
+; if enemy already has a status affliction, don't keep trying to give them one
+; this *should* already be part of AIMoveChoiceModification1 but it doesn't always seem to catch them
+ 	ld a, [wBattleMonStatus]
+ 	and a
+ 	ret z
+ 	ld hl, StatusOnlyMoves
+	ld b, $20
+ 	call AlterMovePriorityArray
+ 	ret
     
 MehStatusMoves:
     db GROWL
@@ -812,7 +821,22 @@ ExplosionMoves:
 	db EXPLOSION
 	db SELFDESTRUCT
 	db $FF
-	
+
+StatusOnlyMoves:
+	db SUPERSONIC
+	db POISONPOWDER
+	db STUN_SPORE
+	db SLEEP_POWDER
+	db THUNDER_WAVE
+	db TOXIC
+	db HYPNOSIS
+	db CONFUSE_RAY
+	db GLARE
+	db POISON_GAS
+	db LOVELY_KISS
+	db SPORE
+	db WILL_O_WISP
+	db $FF
 
 AlterMovePriority:
 ; look for move in W_AIBUFFER in wEnemyMonMoves
