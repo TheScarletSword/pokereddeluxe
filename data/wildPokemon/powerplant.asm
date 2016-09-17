@@ -20,8 +20,8 @@ PowerPlantMons:
 		db 24,PIKACHU
 		db 23,KLINK
 		db 23,JOLTIK
-		db 32,MAGNETON
-		db 35,MAGNETON
+		db 32,KLANG
+		db 35,KLANG
 		db 25,MAGNEMITE
 		db 10,ELEKID
 	ENDC

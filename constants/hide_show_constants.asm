@@ -178,7 +178,6 @@ const_value = 0
 	const HS_SILPH_CO_7F_RIVAL            ; A7
 	const HS_SILPH_CO_7F_ITEM_1           ; A8 X
 	const HS_SILPH_CO_7F_ITEM_2           ; A9 X
-	const HS_SILPH_CO_7F_8                ; AA XXX sprite doesn't exist
 	const HS_SILPH_CO_8F_1                ; AB
 	const HS_SILPH_CO_8F_2                ; AC
 	const HS_SILPH_CO_8F_3                ; AD
@@ -187,14 +186,12 @@ const_value = 0
 	const HS_SILPH_CO_9F_3                ; B0
 	const HS_SILPH_CO_10F_1               ; B1
 	const HS_SILPH_CO_10F_2               ; B2
-	const HS_SILPH_CO_10F_3               ; B3 XXX never (de)activated?
 	const HS_SILPH_CO_10F_ITEM_1          ; B4 X
 	const HS_SILPH_CO_10F_ITEM_2          ; B5 X
 	const HS_SILPH_CO_10F_ITEM_3          ; B6 X
 	const HS_SILPH_CO_11F_1               ; B7
 	const HS_SILPH_CO_11F_2               ; B8
 	const HS_SILPH_CO_11F_3               ; B9
-	const HS_MAP_F4_1                     ; BA XXX sprite doesn't exist
 	const HS_MANSION_2_ITEM               ; BB X
 	const HS_MANSION_3_ITEM_1             ; BC X
 	const HS_MANSION_3_ITEM_2             ; BD X

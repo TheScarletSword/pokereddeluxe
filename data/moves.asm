@@ -280,7 +280,7 @@ Gen6Moves::
 	move QUICK_ATTACK, NO_ADDITIONAL_EFFECT,        40, NORMAL,   100, 30
 	move SUPERPOWER,   NO_ADDITIONAL_EFFECT,       120, FIGHTING, 100, 5
 	move TELEPORT,     SWITCH_AND_TELEPORT_EFFECT,   0, PSYCHIC,  100, 20
-	move NIGHT_SHADE,  SPECIAL_DAMAGE_EFFECT,        0, GHOST,    100, 15
+	move NIGHT_SHADE,  SPECIAL_DAMAGE_EFFECT,        1, GHOST,    100, 15
 	move MIMIC,        MIMIC_EFFECT,                 0, NORMAL,   100, 10
 	move SCREECH,      DEFENSE_DOWN2_EFFECT,         0, NORMAL,    85, 40
 	move DOUBLE_TEAM,  EVASION_UP1_EFFECT,           0, NORMAL,   100, 15
@@ -353,7 +353,7 @@ endr
 	move DRAIN_PUNCH,  DRAIN_HP_EFFECT,                     60, FIGHTING,   100, 5
 	move VACUUM_WAVE,  NO_ADDITIONAL_EFFECT,                40, FIGHTING,   100, 30
 	move DRAGON_PULSE, NO_ADDITIONAL_EFFECT,                90, DRAGON,     100, 10
-	move SUCKER_PUNCH, SUCKER_PUNCH_EFFECT,                 80, DARK,       100, 5
+	move SUCKER_PUNCH, NO_ADDITIONAL_EFFECT,                80, DARK,       100, 5
 	move MOONLIGHT,    HEAL_EFFECT,                         0,  FAIRY,      100, 5
 	move VOLT_TACKLE,  RECOIL_EFFECT,                       120, ELECTRIC,  100, 15
 	move ICE_SHARD,    NO_ADDITIONAL_EFFECT,                40, ICE,        100, 30
@@ -380,7 +380,7 @@ endr
 	move X_SCISSOR,    NO_ADDITIONAL_EFFECT,                80, BUG,        100, 15
 	move SHADOW_PUNCH, SWIFT_EFFECT,                        60, GHOST,      100, 20
 	move EXTREMESPEED, NO_ADDITIONAL_EFFECT,                80, NORMAL,     100, 5
-	move ROCK_POLISH,  SPEED_UP2_EFFECT,                    0,  ROCK,       100, 20
+	move ROCK_POLISH,  SPEED_UP2_EFFECT,                     0,  ROCK,       100, 20
 	move OMINOUS_WIND, NO_ADDITIONAL_EFFECT,                60, GHOST,      100, 5
 	move CROSS_CHOP,   NO_ADDITIONAL_EFFECT,               100, FIGHTING,    80, 5
 	move HURRICANE,    CONFUSION_SIDE_EFFECT,              120, FLYING,      70, 10

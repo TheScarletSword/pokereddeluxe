@@ -5534,8 +5534,8 @@ MoveHitTest: ; 3e56b (f:656b)
 	bit 6,[hl]
 	jp nz,.moveMissed
 .suckerPunchCheck
- 	ld a,[de]
- 	cp a,SUCKER_PUNCH_EFFECT
+ 	ld a,[wPlayerSelectedMove]
+ 	cp a,SUCKER_PUNCH
  	jr nz,.swiftCheck
  	call SuckerPunchHitTest
  	jr c,.moveMissed
@@ -7409,7 +7409,6 @@ MoveEffectPointerTable: ; 3f150 (f:7150)
 	 dw StatModifierDownEffect100 ; SPEED_DOWN_SIDE_EFFECT_100
 	 dw StatModifierDownEffect100 ; SPECIAL_DOWN_SIDE_EFFECT_100
 	 dw FreezeBurnParalyzeEffect  ; PARALYZE_SIDE_EFFECT_100
-	 dw $0000                     ; SUCKER_PUNCH_EFFECT
 
 SleepEffect: ; 3f1fc (f:71fc)
 	ld de, wEnemyMonStatus
@@ -8946,87 +8945,16 @@ SuckerPunchHitTest:
 	ld a, [H_WHOSETURN]
 	and a
 	jr z, .getEnemyMove
-	ld a, [wPlayerSelectedMove]
+	ld a, [W_PLAYERMOVEPOWER]
 	jr .checkIfDamagingMove
 .getEnemyMove
-	ld a, [wEnemySelectedMove]
+	ld a, [W_ENEMYMOVEPOWER]
 .checkIfDamagingMove
-	ld b, a
-	ld hl, NonDamagingMoves
-.nonDamageMoveLoop
-	ld a, [hli]
-	cp $ff  ; terminator
-	jr z, .moveHit
-	cp b
+	and a ; does the move have 0 for its power? (special damage moves have 1 so this still works)
 	jr z, .moveMissed
-	jr .nonDamageMoveLoop
 .moveHit
 	and a  ; reset carry flag
 	ret
 .moveMissed
 	scf
 	ret
-
-NonDamagingMoves:
-; Used to determine if Sucker Punch will hit.
-; The list of non-damaging moves is much shorter than damaging moves, so we're saving precious space in this Bank.
-	db SWORDS_DANCE
-	db SAND_ATTACK
-	db TAIL_WHIP
-	db LEER
-	db GROWL
-	db ROAR
-	db SING
-	db SUPERSONIC
-	db DISABLE
-	db MIST
-	db LEECH_SEED
-	db GROWTH
-	db POISONPOWDER
-	db STUN_SPORE
-	db SLEEP_POWDER
-	db STRING_SHOT
-	db THUNDER_WAVE
-	db TOXIC
-	db HYPNOSIS
-	db MEDITATE
-	db AGILITY
-	db TELEPORT
-	db MIMIC
-	db SCREECH
-	db DOUBLE_TEAM
-	db RECOVER
-	db HARDEN
-	db MINIMIZE
-	db SMOKESCREEN
-	db CONFUSE_RAY
-	db WITHDRAW
-	db DEFENSE_CURL
-	db BARRIER
-	db LIGHT_SCREEN
-	db HAZE
-	db REFLECT
-	db METRONOME
-	db AMNESIA
-	db SOFTBOILED
-	db GLARE
-	db POISON_GAS
-	db LOVELY_KISS
-	db TRANSFORM
-	db SPORE
-	db FLASH
-	db SPLASH
-	db REST
-	db SHARPEN
-	db CONVERSION
-	db SUBSTITUTE
-	db COSMIC_POWER
-	db MOONLIGHT
-	db FAKE_TEARS
-	db ROCK_POLISH
-	db SHIFT_GEAR
-	db ROOST
-	db WILL_O_WISP
-	db METAL_SOUND
-	db SYNTHESIS
-	db $ff

@@ -249,7 +249,6 @@ MapHSPointers: ; c8f5 (3:48f5)
 	dw MapHSXX
 	dw MapHSXX
 	dw MapHSXX
-	dw MapHSF4
 	dw MapHSXX
 	dw MapHSXX
 	dw MapHSXX
@@ -497,7 +496,6 @@ MapHSD4: ; ccd3 (3:4cd3)
 	db SILPH_CO_7F,$09,Show
 	db SILPH_CO_7F,$0A,Show
 	db SILPH_CO_7F,$0B,Show
-	db SILPH_CO_7F,$0C,Show
 MapHSD5: ; cceb (3:4ceb)
 	db SILPH_CO_8F,$02,Show
 	db SILPH_CO_8F,$03,Show
@@ -509,7 +507,6 @@ MapHSE9: ; ccf4 (3:4cf4)
 MapHSEA: ; ccfd (3:4cfd)
 	db SILPH_CO_10F,$01,Show
 	db SILPH_CO_10F,$02,Show
-	db SILPH_CO_10F,$03,Show
 	db SILPH_CO_10F,$04,Show
 	db SILPH_CO_10F,$05,Show
 	db SILPH_CO_10F,$06,Show
@@ -517,8 +514,6 @@ MapHSEB: ; cd0f (3:4d0f)
 	db SILPH_CO_11F,$03,Show
 	db SILPH_CO_11F,$04,Show
 	db SILPH_CO_11F,$05,Show
-MapHSF4: ; cd18 (3:4d18)
-	db $F4,$02,Show
 MapHSD6: ; cd1b (3:4d1b)
 	db MANSION_2,$02,Show
 MapHSD7: ; cd1e (3:4d1e)
